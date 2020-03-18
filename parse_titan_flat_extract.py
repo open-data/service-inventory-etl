@@ -178,7 +178,7 @@ def run_services_transformation(extract_file, output_file):
         'Economic Segments':'econom',
         'Foreign Entities':'for',
         'Provinces, Territories and Communities':'PTC',
-        'Internal to Government':'internal_gov',
+        'Internal to Government':'intern_gov',
         'Environmental':'enviro'
     }
     df_services['client_target_groups'] = df_services['Target Groups (English)'].apply(lambda x: process_lookup_map(x, target_group_lookup, ''))
