@@ -1,0 +1,14 @@
+{
+    "local": {
+        "registry_endpoint": "https://some-endpoint.com",
+        "registry_api_key": "some-guid-goes-here"
+    },
+    "staging": {
+        "registry_endpoint": "https://some-endpoint.com",
+        "registry_api_key": "some-guid-goes-here"
+    },
+    "production": {
+        "registry_endpoint": "https://some-endpoint.com",
+        "registry_api_key": "some-guid-goes-here"
+    }
+}
