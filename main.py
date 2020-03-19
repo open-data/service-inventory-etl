@@ -1,8 +1,8 @@
-import build_json_from_yaml as schema_convert
-import parse_titan_flat_extract as data_transform
-import validate_csv_quality as data_quality
-import prep_and_publish_data as publish_prep
 import json, sys
+from schema import build_json_from_yaml as schema_convert
+from pipeline import parse_titan_flat_extract as data_transform
+from pipeline import validate_csv_quality as data_quality
+from pipeline import prep_and_publish_data as publish_prep
 
 # *********************************************************
 # Look for configuration.json in the root folder and load 
@@ -10,10 +10,11 @@ import json, sys
 # file and enter your own keys.
 # *********************************************************
 print('\nLoading configuration file')
-environment = "local"
+environment = 'local'
+config_file = 'config/configuration.json'
 
 try:
-    with open('configuration.json') as creds:    
+    with open(config_file) as creds:    
         credentials = json.load(creds)[environment]
     print('>> Credentials file found.  Environment set to "{0}"'.format(environment))
 except:
@@ -33,7 +34,7 @@ base_git_url = 'https://raw.githubusercontent.com/Jmikelittle/ckanext-canada/DPO
 yaml_schema_file = 'service.yaml'
 
 # The output file name for the generated JSON file
-json_schema_file = 'service_table_schema.json'
+json_schema_file = 'schema/service_table_schema.json'
 
 # The YAML has multiple schemas defined (zero-based) and the resource_id 
 # points to the desired schema.  0 = service and 1 = standard
@@ -50,7 +51,7 @@ print('>> Finished producing services JSON schema')
 print('\nConverting Standards YAML schema to JSON schema')
 
 # The output file name for the generated JSON file
-json_schema_file = 'standards_table_schema.json'
+json_schema_file = 'schema/standards_table_schema.json'
 
 # The YAML has multiple schemas defined (zero-based) and the resource_id 
 # points to the desired schema.  0 = service and 1 = standard
