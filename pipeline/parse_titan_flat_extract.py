@@ -3,7 +3,7 @@ import math
 
 # Takes in a year integer and returns a year range string (2018 becomes "2018-2019")
 def process_year_to_range(year):
-    if math.isnan(year):
+    if year == '' or type(year) is float and math.isnan(year):
         return ''
     else:
         return str(int(year)) + '-' + str(int(year+1))
@@ -11,12 +11,13 @@ def process_year_to_range(year):
 
 # Takes in a dictionary and an index (or list of indicies) and returns a comma separated list as a string
 def process_lookup_map(val, lookup, default_value):
-    if type(val) is not str:
+    if type(val) is not str or val == '':
         return default_value
     return_list = []
     for v in val.split('<>'):
         try:
-            return_list.append(lookup[v])
+            if v != '':
+                return_list.append(lookup[v])
         except:
             print('\tERROR: Unable to find code in lookup for value: {0}'.format(v))
     return ','.join(return_list)
@@ -56,7 +57,7 @@ def process_list_restructure(bad_list):
 
 
 def process_num_or_ND(count):
-    if type(count) is float and math.isnan(count):
+    if count == '' or type(count) is float and math.isnan(count):
         return 'ND'
     else:
         return count
@@ -69,7 +70,7 @@ def process_performance_calculation(total_volume, volume_meeting_target):
 
 def run_services_transformation(extract_file, output_file):
     print('>> Loading services data from {0}'.format(extract_file))
-    df_services = pd.read_excel(extract_file, sheet_name='Services', encoding='utf-8')
+    df_services = pd.read_excel(extract_file, sheet_name='Services', encoding='utf-8', na_filter=False)
     select_columns = []
     
     print('>> Building services registry dataset')
@@ -90,7 +91,8 @@ def run_services_transformation(extract_file, output_file):
         'No': 'N',
         'Not Applicable': 'NA',
         'Enabled': 'Y',
-        'Not Enabled': 'N'
+        'Not Enabled': 'N',
+        '': 'NA'
     }
     
     # Create fiscal_yr column
@@ -179,7 +181,8 @@ def run_services_transformation(extract_file, output_file):
         'Foreign Entities':'for',
         'Provinces, Territories and Communities':'PTC',
         'Internal to Government':'intern_gov',
-        'Environmental':'enviro'
+        'Environmental':'enviro',
+        '':'ND'
     }
     df_services['client_target_groups'] = df_services['Target Groups (English)'].apply(lambda x: process_lookup_map(x, target_group_lookup, ''))
     select_columns.append('client_target_groups')
@@ -205,8 +208,8 @@ def run_services_transformation(extract_file, output_file):
     # Create service_channels column
     #TODO: Figure out where this data point comes from
     #df_services['service_channel'] = df_services['Add Titan Extract Column Name'].apply(lambda x: process_lookup_map(x, generic_channel_lookup, ''))
-    df_services['service_channel'] = 'ND'
-    select_columns.append('service_channel')
+    df_services['service_channels'] = 'ND'
+    select_columns.append('service_channels')
 
     # Create online_applications column
     df_services['online_applications'] = df_services['Online Applications'].apply(lambda x: process_num_or_ND(x))
@@ -271,7 +274,7 @@ def run_services_transformation(extract_file, output_file):
 
 def run_standards_transformation(extract_file, output_file):
     print('>> Loading standards data from {0}'.format(extract_file))
-    df_standards = pd.read_excel(extract_file, sheet_name='Standards', encoding='utf-8')
+    df_standards = pd.read_excel(extract_file, sheet_name='Standards', encoding='utf-8', na_filter=False)
     select_columns = []
     
     print('>> Building standards registry dataset')
@@ -335,6 +338,10 @@ def run_standards_transformation(extract_file, output_file):
     df_standards['service_std_target'] = df_standards['Target'].apply(lambda x: process_num_or_ND(x))
     select_columns.append('service_std_target')
 
+    # Create volume_meeting_target column
+    df_standards['volume_meeting_target'] = df_standards['Volume Meeting Target'].apply(lambda x: process_num_or_ND(x))
+    select_columns.append('volume_meeting_target')
+
     # Create total_volume column
     df_standards['total_volume'] = df_standards['Total Volume'].apply(lambda x: process_num_or_ND(x))
     select_columns.append('total_volume')
@@ -344,8 +351,8 @@ def run_standards_transformation(extract_file, output_file):
     select_columns.append('performance')
 
     # Create gcss_tool_fiscal_year column
-    df_standards['gcss_tool_fiscal_year'] = df_standards['Last GCSS Assessment'].apply(lambda x: process_year_to_range(x))
-    select_columns.append('gcss_tool_fiscal_year')
+    df_standards['gcss_tool_fiscal_yr'] = df_standards['Last GCSS Assessment'].apply(lambda x: process_year_to_range(x))
+    select_columns.append('gcss_tool_fiscal_yr')
 
     # Create channel column
     df_standards['channel'] = df_standards['Channel (English)'].apply(lambda x: process_lookup_map(x, generic_channel_lookup, ''))

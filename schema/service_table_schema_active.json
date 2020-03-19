@@ -2,451 +2,250 @@
     "fields": [
         {
             "name": "fiscal_yr",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "2019-2020",
-                        "2018-2019",
-                        "2017-2018",
-                        "2016-2017",
-                        "2015-2016",
-                        "2014-2015",
-                        "2013-2014"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_id",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_name_en",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_name_fr",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "department_name_en",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "department_name_fr",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "external_internal",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "intern",
-                        "extern",
-                        "enterprise"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_type",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "acq",
-                        "adv",
-                        "comm",
-                        "ecu",
-                        "fm",
-                        "gnc",
-                        "hr",
-                        "reg_vol",
-                        "im",
-                        "its",
-                        "legal",
-                        "mgnt",
-                        "mat",
-                        "reg",
-                        "res",
-                        "prop",
-                        "rule"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "special_designations",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "prior",
-                        "crit",
-                        "essent",
-                        "non"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_description_en",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_description_fr",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_url_en",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
         },
         {
             "name": "service_url_fr",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
         },
         {
             "name": "program_name_en",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
         },
         {
             "name": "program_name_fr",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
         },
         {
             "name": "last_GBA",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "2019-2020",
-                        "2018-2019",
-                        "2017-2018",
-                        "2016-2017",
-                        "2015-2016",
-                        "2014-2015",
-                        "2013-2014"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
         },
         {
             "name": "client_target_groups",
-            "type": "_text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "person",
-                        "NGO",
-                        "econom",
-                        "for",
-                        "PTC",
-                        "intern_gov",
-                        "enviro"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "info_service",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_fee",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "cra_business_number",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N",
-                        "NA"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "use_of_sin",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N",
-                        "NA"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "service_channels",
-            "type": "_text",
-            "constraints": [
-                {
-                    "required": false,
-                    "enum": [
-                        "onl",
-                        "tel",
-                        "person",
-                        "eml",
-                        "fax",
-                        "post",
-                        "oth",
-                        "non"
-                    ]
-                }
-            ]
+            "type": "string"
         },
         {
             "name": "online_applications",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "web_visits_info_service",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "calls_received",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "in_person_applications",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "postal_mail_applications",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "other_applications",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "e_registration",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N",
-                        "NA"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "e_authentication",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N",
-                        "NA"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "e_application",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N",
-                        "NA"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "e_decision",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N",
-                        "NA"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "e_issuance",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N",
-                        "NA"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "e_feedback",
-            "type": "text",
-            "constraints": [
-                {
-                    "required": true,
-                    "enum": [
-                        "Y",
-                        "N",
-                        "NA"
-                    ]
-                }
-            ]
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
         },
         {
             "name": "client_feedback",
-            "type": "_text",
-            "constraints": [
-                {
-                    "required": false,
-                    "enum": [
-                        "onl",
-                        "tel",
-                        "person",
-                        "eml",
-                        "fax",
-                        "post",
-                        "oth",
-                        "non"
-                    ]
-                }
-            ]
+            "type": "string"
         },
         {
             "name": "special_remarks_en",
-            "type": "text"
+            "type": "string"
         },
         {
             "name": "special_remarks_fr",
-            "type": "text"
+            "type": "string"
         }
     ]
 }
