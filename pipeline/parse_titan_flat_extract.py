@@ -270,7 +270,7 @@ def run_services_transformation(extract_file, output_file):
     select_columns.append('special_remarks_fr')
 
     print('>> Writing services registry dataset to {0}'.format(output_file))
-    df_services[select_columns].to_csv(output_file, index=None, header=True, encoding='utf-8')
+    df_services[select_columns].to_csv(output_file, index=None, header=True, encoding='utf-8-sig')
 
 def run_standards_transformation(extract_file, output_file):
     print('>> Loading standards data from {0}'.format(extract_file))
@@ -377,4 +377,4 @@ def run_standards_transformation(extract_file, output_file):
     select_columns.append('realtime_result_url_fr')
 
     print('>> Writing standards registry dataset to {0}'.format(output_file))
-    df_standards[select_columns].to_csv(output_file, index=None, header=True, encoding='utf-8')
+    df_standards[select_columns].to_csv(output_file, index=None, header=True, encoding='utf-8-sig')

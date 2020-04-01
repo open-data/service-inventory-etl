@@ -13,7 +13,7 @@ def run_data_quality_validation(csv_file, schema_file, choices_file):
         print('>> Data Quality Report\n\tStructure:\t{0}\n\tEncoding:\t{1} ({2})\n\tRow Count:\t{3}'.format(
             'Valid' if gt_report['tables'][0]['valid'] == True else 'INVALID',
             gt_report['tables'][0]['encoding'],
-            'Valid' if gt_report['tables'][0]['encoding'] == 'utf-8' else 'INVALID',
+            'Valid' if gt_report['tables'][0]['encoding'].startswith('utf-8') else 'INVALID',
             gt_report['tables'][0]['row-count']
         ))
 
