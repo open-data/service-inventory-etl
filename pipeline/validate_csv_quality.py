@@ -2,6 +2,7 @@ import sys, json, math
 from goodtables import validate
 from pprint import pprint
 import pandas as pd
+from datetime import datetime
 
 max_rows_to_process = 2000
 valid_choices = {}
@@ -18,9 +19,15 @@ def run_data_quality_validation(csv_file, schema_file, choices_file):
         ))
 
         if gt_report['tables'][0]['valid'] == False:
-            print('\tERROR: CSV validation failed.  Printing full validation report and exiting.')
+            now = datetime.now()
+            current_timestamp = now.strftime("%Y%m%d_%H%M%S")
+            error_file = 'errors/gt_report_' + current_timestamp + '.json'
+
+            print('\tERROR: CSV validation failed.  Writing full validation report to disk ({0}) and exiting.'.format(error_file))
             print('\n***************************************************************************')
-            #pprint(gt_report)
+            with open(error_file, 'w', encoding='utf-8') as f:
+                json.dump(gt_report, f)
+            
             sys.exit('EXIT: Data Quality checks failed (Validation returned INVALID status)')
 
     except:
