@@ -5,12 +5,17 @@ from pipeline import validate_csv_quality as data_quality
 from pipeline import prep_and_publish_data as publish_prep
 
 # *********************************************************
+# Set the correct environment (local | staging | production)
+# *********************************************************
+environment = 'staging'
+
+
+# *********************************************************
 # Look for configuration.json in the root folder and load 
 # required secrets and API keys.  Use the configuration.template.json 
 # file and enter your own keys.
 # *********************************************************
 print('\nLoading configuration file')
-environment = 'local'
 config_file = 'config/configuration.json'
 
 try:
@@ -109,6 +114,10 @@ data_quality.run_data_quality_validation(standards_output_csv, standards_schema_
 # *********************************************************
 # Transform the CSV to JSON and submit to the Registry API
 # *********************************************************
-print('\nPreparing Data and Publishing to the Registry')
+print('\nPreparing Services Data and Publishing to the Registry')
 
-publish_prep.run_prep_and_publish(services_output_csv)
+publish_prep.run_prep_and_publish(services_output_csv, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['services_dataset_id'], credentials['services_resource_id'])
+
+print('\nPreparing Standards Data and Publishing to the Registry')
+
+publish_prep.run_prep_and_publish(standards_output_csv, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['standards_dataset_id'], credentials['standards_resource_id'])
