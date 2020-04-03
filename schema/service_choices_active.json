@@ -71,7 +71,8 @@
     "use_of_sin": [
         "Y",
         "N",
-        "NA"
+        "NA",
+        "ND"
     ],
     "service_channels": [
         "onl",

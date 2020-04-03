@@ -63,7 +63,7 @@ def run_conversion(base_git_url, resource_id, yaml_file, json_schema_file, json_
         is_required = False
 
         if 'import_template_include' in f.keys() and f['import_template_include'] is False:
-            print('\tSKIP: {0} should not be included in the import file'.format(f['datastore_id']))
+            #print('\tSKIP: {0} should not be included in the import file'.format(f['datastore_id']))
             continue
 
         try:

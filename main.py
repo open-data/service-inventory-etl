@@ -78,13 +78,13 @@ print('\nTransforming Titan extract to CSV schema')
 titan_flat_extract = 'data/titan_extract_flat.xlsx'
 
 # Define the path to write the services output csv file
-services_output_csv = 'data/services_registry_output.csv'
+services_output_csv = 'data/service_inventory.csv'
 
 # Transform the Titan extract to the desired format and produce a services CSV
 data_transform.run_services_transformation(titan_flat_extract, services_output_csv)
 
 # Define the path to write the standard output csv file
-standards_output_csv = 'data/standards_registry_output.csv'
+standards_output_csv = 'data/service_standards.csv'
 
 # Transform the Titan extract to the desired format and produce a services CSV
 data_transform.run_standards_transformation(titan_flat_extract, standards_output_csv)
@@ -116,8 +116,12 @@ data_quality.run_data_quality_validation(standards_output_csv, standards_schema_
 # *********************************************************
 print('\nPreparing Services Data and Publishing to the Registry')
 
-publish_prep.run_prep_and_publish(services_output_csv, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['services_dataset_id'], credentials['services_resource_id'])
+services_dataset_title = 'Service Identification Information & Metrics'
+publish_prep.run_prep_and_publish(services_output_csv, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['dataset_id'], credentials['services_resource_id'], services_dataset_title)
 
 print('\nPreparing Standards Data and Publishing to the Registry')
 
-publish_prep.run_prep_and_publish(standards_output_csv, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['standards_dataset_id'], credentials['standards_resource_id'])
+standards_dataset_title = 'Service Standards & Performance Results'
+publish_prep.run_prep_and_publish(standards_output_csv, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['dataset_id'], credentials['standards_resource_id'], standards_dataset_title)
+
+print('\nPublishing complete')

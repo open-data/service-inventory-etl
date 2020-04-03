@@ -68,6 +68,13 @@
             "type": "string"
         },
         {
+            "name": "volume_meeting_target",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
             "name": "total_volume",
             "type": "string",
             "constraints": {

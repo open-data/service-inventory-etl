@@ -10,14 +10,13 @@ services_output_csv = 'data/historic_services.csv'
 standards_output_csv = 'data/historic_standards.csv'
 
 df_services = pd.read_excel(spreadsheet_file, sheet_name='Services', encoding='utf-8', na_filter=False)
-df_services['use_of_sin'] = df_services['use_of_sin'].apply(lambda x: x if x != '' else 'NA')
+df_services['use_of_sin'] = df_services['use_of_sin'].apply(lambda x: x if x != '' else 'ND')
 df_services.to_csv(services_output_csv, index=None, header=True, encoding='utf-8')
 
 df_standards = pd.read_excel(spreadsheet_file, sheet_name='Standards', encoding='utf-8', na_filter=False)
 df_standards['target_type'] = 'percentage'
 df_standards.to_csv(standards_output_csv, index=None, header=True, encoding='utf-8')
 
-print('checkpoint')
 
 # *********************************************************
 # Validate the services dataset with goodtables
