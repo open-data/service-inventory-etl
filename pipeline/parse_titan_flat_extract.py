@@ -1,5 +1,5 @@
 import pandas as pd
-import math
+import sys, math
 
 # Takes in a year integer and returns a year range string (2018 becomes "2018-2019")
 def process_year_to_range(year):
@@ -68,7 +68,7 @@ def process_performance_calculation(total_volume, volume_meeting_target):
     except:
         return 'ND'
 
-def run_services_transformation(extract_file, output_file):
+def run_services_transformation(extract_file, output_path, output_file):
     print('>> Loading services data from {0}'.format(extract_file))
     df_services = pd.read_excel(extract_file, sheet_name='Services', encoding='utf-8', na_filter=False)
     select_columns = []
@@ -269,10 +269,17 @@ def run_services_transformation(extract_file, output_file):
     df_services['special_remarks_fr'] = df_services['Comments (French)']
     select_columns.append('special_remarks_fr')
 
-    print('>> Writing services registry dataset to {0}'.format(output_file))
-    df_services[select_columns].to_csv(output_file, index=None, header=True, encoding='utf-8-sig')
+    if len(df_services['fiscal_yr'].unique()) > 1:
+        sys.exit('More than 1 year found in the SERVICES dataset. Each file should only have a single year to process.  Searate years into multiple files and try again running one extract at a time.')
+    else:
+        outfile = output_path + df_services['fiscal_yr'].unique()[0] + '_' + output_file
 
-def run_standards_transformation(extract_file, output_file):
+    print('>> Writing services registry dataset to {0}'.format(output_file))
+    df_services[select_columns].to_csv(outfile, index=None, header=True, encoding='utf-8-sig')
+
+    return outfile
+
+def run_standards_transformation(extract_file, output_path, output_file):
     print('>> Loading standards data from {0}'.format(extract_file))
     df_standards = pd.read_excel(extract_file, sheet_name='Standards', encoding='utf-8', na_filter=False)
     select_columns = []
@@ -376,5 +383,12 @@ def run_standards_transformation(extract_file, output_file):
     df_standards['realtime_result_url_fr'] = df_standards['RTP URLs (French)'].apply(lambda x: process_list_restructure(x))
     select_columns.append('realtime_result_url_fr')
 
+    if len(df_standards['fiscal_yr'].unique()) > 1:
+        sys.exit('More than 1 year found in the STANDARDS dataset. Each file should only have a single year to process.  Searate years into multiple files and try again running one extract at a time.')
+    else:
+        outfile = output_path + df_standards['fiscal_yr'].unique()[0] + '_' + output_file
+
     print('>> Writing standards registry dataset to {0}'.format(output_file))
-    df_standards[select_columns].to_csv(output_file, index=None, header=True, encoding='utf-8-sig')
+    df_standards[select_columns].to_csv(outfile, index=None, header=True, encoding='utf-8-sig')
+
+    return outfile

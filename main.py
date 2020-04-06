@@ -5,13 +5,13 @@ from pipeline import validate_csv_quality as data_quality
 from pipeline import prep_and_publish_data as publish_prep
 
 # *********************************************************
-# Set the correct environment (local | staging | production)
+# Set the correct environment (staging | production)
 # *********************************************************
 environment = 'staging'
-
+publish_to_portal = False
 
 # *********************************************************
-# Look for configuration.json in the root folder and load 
+# Look for configuration.json in the config folder and load 
 # required secrets and API keys.  Use the configuration.template.json 
 # file and enter your own keys.
 # *********************************************************
@@ -72,56 +72,79 @@ print('>> Finished producing standards JSON schema')
 # *********************************************************
 # Load and process the Titan flat extract
 # *********************************************************
-print('\nTransforming Titan extract to CSV schema')
+print('\nTransforming extract to CSV schema')
 
 # Define the path to the local Titan extract file
-titan_flat_extract = 'data/titan_extract_flat.xlsx'
+titan_flat_extract = 'data/latest_annual_extract.xlsx'
+
+output_path = 'data/yearly/'
 
 # Define the path to write the services output csv file
-services_output_csv = 'data/service_inventory.csv'
+services_output_csv = 'services.csv'
 
 # Transform the Titan extract to the desired format and produce a services CSV
-data_transform.run_services_transformation(titan_flat_extract, services_output_csv)
+new_services_file = data_transform.run_services_transformation(titan_flat_extract, output_path, services_output_csv)
 
 # Define the path to write the standard output csv file
-standards_output_csv = 'data/service_standards.csv'
+standards_output_csv = 'standards.csv'
 
 # Transform the Titan extract to the desired format and produce a services CSV
-data_transform.run_standards_transformation(titan_flat_extract, standards_output_csv)
+new_standards_file = data_transform.run_standards_transformation(titan_flat_extract, output_path, standards_output_csv)
 
 
 # *********************************************************
 # Validate the services dataset with goodtables
 # *********************************************************
-print('\nEvaluating Services Data Quality')
+print('\nEvaluating New Services Data Quality')
 
 services_schema_override = 'schema/service_table_schema_active.json'
 #services_schema_override = services_schema_file
 services_choices_override = 'schema/service_choices_active.json'
 #services_choices_override = services_choices_file
 
-data_quality.run_data_quality_validation(services_output_csv, services_schema_override, services_choices_override)
+data_quality.run_data_quality_validation(new_services_file, services_schema_override, services_choices_override)
 
-print('\nEvaluating Standards Data Quality')
+print('\nEvaluating New Standards Data Quality')
 standards_schema_override = 'schema/standards_table_schema_active.json'
 #standards_schema_override = standards_schema_file
 standards_choices_override = 'schema/standards_choices_active.json'
 #standards_choices_override = standards_choices_file
 
-data_quality.run_data_quality_validation(standards_output_csv, standards_schema_override, standards_choices_override)
+data_quality.run_data_quality_validation(new_standards_file, standards_schema_override, standards_choices_override)
+
+# *********************************************************
+# Merge all years together
+# *********************************************************
+print('\nMerging annual files and performing final validation')
+
+publish_services_file = 'data/publish/service_inventory.csv'
+publish_prep.run_merge_years('data/yearly/', '*_services.csv', publish_services_file)
+publish_standards_file = 'data/publish/service_standards.csv'
+publish_prep.run_merge_years('data/yearly/', '*_standards.csv', publish_standards_file)
+
+print('\nEvaluating Combined Services Data Quality')
+data_quality.run_data_quality_validation(publish_services_file, services_schema_override, services_choices_override)
+
+print('\nEvaluating Combined Standards Data Quality')
+data_quality.run_data_quality_validation(publish_standards_file, standards_schema_override, standards_choices_override)
 
 
 # *********************************************************
-# Transform the CSV to JSON and submit to the Registry API
+# Publish the updated files to the portal
 # *********************************************************
-print('\nPreparing Services Data and Publishing to the Registry')
+if publish_to_portal:
+    print('\nPreparing Services Data and Publishing to the Registry')
 
-services_dataset_title = 'Service Identification Information & Metrics'
-publish_prep.run_prep_and_publish(services_output_csv, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['dataset_id'], credentials['services_resource_id'], services_dataset_title)
+    services_dataset_title = 'Service Identification Information & Metrics'
+    publish_prep.run_prep_and_publish(publish_services_file, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['dataset_id'], credentials['services_resource_id'], services_dataset_title)
 
-print('\nPreparing Standards Data and Publishing to the Registry')
+    print('\nPreparing Standards Data and Publishing to the Registry')
 
-standards_dataset_title = 'Service Standards & Performance Results'
-publish_prep.run_prep_and_publish(standards_output_csv, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['dataset_id'], credentials['standards_resource_id'], standards_dataset_title)
+    standards_dataset_title = 'Service Standards & Performance Results'
+    publish_prep.run_prep_and_publish(publish_standards_file, credentials['registry_endpoint'], credentials['registry_api_key'], credentials['dataset_id'], credentials['standards_resource_id'], standards_dataset_title)
 
-print('\nPublishing complete')
+    print('\nPublishing complete')
+else:
+    print('\nPublishing set to False - skipping publishing step.  Set publish_to_portal to True to push data to the portal.')
+
+print('\nScript finished.')
