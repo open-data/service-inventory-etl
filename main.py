@@ -8,7 +8,7 @@ from pipeline import prep_and_publish_data as publish_prep
 # Set the correct environment (staging | production)
 # *********************************************************
 environment = 'staging'
-publish_to_portal = False
+publish_to_portal = True
 
 # *********************************************************
 # Look for configuration.json in the config folder and load 
