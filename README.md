@@ -27,7 +27,35 @@ This project takes a flat Excel extract from Titan, transforms it into a CSV for
 1. The program will transform the new extract into the schema defined by the YAML and then validate the resulting data to ensure compliance and overall quality.  The output of the processing will be stored in the `/data/yearly/` folder with `fiscal_year` as a prefix (e.g. /data/yearly/2018-2019_services.csv)
 1. The program will then merge together all files of a particular type (i.e. services or standards) and revalidate for compliance and overall quality.
 1. Finally, the merged files for both services and standards will be published to the portal.
-    * You can override the script's default publishing behaviour by setting `publish_to_portal` to `False` in the `/main.py` file.
+    * Publishing will only happen if the --publish command-line argument is suplied.  More details in the Command-line Options section below.
+
+### Command-line Options
+By default, this script will activate the staging environment as the target and disable publishing.  You can override this default behaviour by using the following command-line arguments:
+
+    --p, --publish:     Enable publishing on this run
+        default: False
+    --e, --environment: Specify the environment to publish to
+        choices: {staging, production}
+        default: staging
+
+Examples:
+```
+# Default - Target staging and don't publish
+python main.py
+
+# Comand-line Help
+python main.py --help
+
+# Explicitly target staging and publish
+python main.py --environment staging --publish
+
+# Target production and publish (verbose)
+python main.py --environment production --publish
+
+# Target production and publish
+python main.py --e production --p
+```
+
 
 ## Historic Data
 There is a helper script in the root folder called `historic_data_quality_check.py` which will incorporate older historic data into the overall merge process.  If the historic (2016-2017 or 2017-2018) data needs to be updated, replace `/data/historic/historic_data.xlsx` with an updated file and run `python historic_data_quality_check.py` to regenerate the files needed by the merge component.

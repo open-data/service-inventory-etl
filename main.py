@@ -3,12 +3,24 @@ from schema import build_json_from_yaml as schema_convert
 from pipeline import parse_titan_flat_extract as data_transform
 from pipeline import validate_csv_quality as data_quality
 from pipeline import prep_and_publish_data as publish_prep
+import argparse
 
 # *********************************************************
-# Set the correct environment (staging | production)
+# Parse the command-line arguments to define how the script will run
+#       --p, --publish:     Enable publishing on this run
+#               default: False
+#       --e, --environment: Specify the environment to publish to
+#               choices: {staging, production}
+#               default: staging
 # *********************************************************
-environment = 'staging'
-publish_to_portal = True
+parser = argparse.ArgumentParser(description='Service Inventory ETL from Titan to the OpenData Portal')
+parser.add_argument("--publish", "--p", action="store_true", help="enable automatic publishing to the OpenData portal")
+parser.add_argument("--environment", "--e", choices=["staging", "production"], default="staging", type=str, help="specify the environment to publish to")
+args = parser.parse_args()
+
+publish_to_portal = args.p # default = False
+environment = args.e # default = staging
+
 
 # *********************************************************
 # Look for configuration.json in the config folder and load 
