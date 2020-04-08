@@ -19,14 +19,12 @@ parser.add_argument("--environment", "--e", choices=["staging", "production"], d
 args = parser.parse_args()
 
 try:
-    publish_to_portal = args.p # default = False
+    publish_to_portal = args.publish # default = False
 except:
     publish_to_portal = False
 
-publish_to_portal = True
-
 try:
-    environment = args.e # default = staging
+    environment = args.environment # default = staging
 except:
     environment = 'staging'
 
