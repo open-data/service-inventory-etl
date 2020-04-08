@@ -18,8 +18,17 @@ parser.add_argument("--publish", "--p", action="store_true", help="enable automa
 parser.add_argument("--environment", "--e", choices=["staging", "production"], default="staging", type=str, help="specify the environment to publish to")
 args = parser.parse_args()
 
-publish_to_portal = args.p # default = False
-environment = args.e # default = staging
+try:
+    publish_to_portal = args.p # default = False
+except:
+    publish_to_portal = False
+
+publish_to_portal = True
+
+try:
+    environment = args.e # default = staging
+except:
+    environment = 'staging'
 
 
 # *********************************************************
