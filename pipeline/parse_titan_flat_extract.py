@@ -110,9 +110,12 @@ def run_services_transformation(extract_file, output_path, output_file):
     select_columns.append('service_name_fr')
 
     # Create department_name_* columns
-    df_services['department_name_en'] = df_services['Department Name (English)']
+    df_services['department_name_en'] = df_services['Applied Titled (English)']
+    df_services['department_name_en'] = df_services.apply(lambda x: x['department_name_en'] if x['department_name_en'] != '' else x['Department Name (English)'], axis=1)
     select_columns.append('department_name_en')
-    df_services['department_name_fr'] = df_services['Department Name (French)']
+    
+    df_services['department_name_fr'] = df_services['Applied Title (French)']
+    df_services['department_name_fr'] = df_services.apply(lambda x: x['department_name_fr'] if x['department_name_fr'] != '' else x['Department Name (French)'], axis=1)
     select_columns.append('department_name_fr')
 
     # Create external_internal column
