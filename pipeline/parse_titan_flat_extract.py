@@ -309,6 +309,12 @@ def run_standards_transformation(extract_file, output_path, output_file):
     df_standards['service_id'] = df_standards['Service ID']
     select_columns.append('service_id')
 
+    # Create service_name_* columns
+    df_standards['service_name_en'] = df_standards['Service Name (English)']
+    select_columns.append('service_name_en')
+    df_standards['service_name_fr'] = df_standards['Service Name (French)']
+    select_columns.append('service_name_fr')
+
     # Create service_std_id column
     df_standards['service_std_id'] = df_standards['Standard ID']
     select_columns.append('service_std_id')
@@ -385,6 +391,16 @@ def run_standards_transformation(extract_file, output_path, output_file):
     select_columns.append('realtime_result_url_en')
     df_standards['realtime_result_url_fr'] = df_standards['RTP URLs (French)'].apply(lambda x: process_list_restructure(x))
     select_columns.append('realtime_result_url_fr')
+
+    # Create department_name_* columns
+    df_standards['department_name_en'] = df_standards['Applied Titled (English)']
+    df_standards['department_name_en'] = df_standards.apply(lambda x: x['department_name_en'] if x['department_name_en'] != '' else x['Department Name (English)'], axis=1)
+    select_columns.append('department_name_en')
+    
+    df_standards['department_name_fr'] = df_standards['Applied Title (French)']
+    df_standards['department_name_fr'] = df_standards.apply(lambda x: x['department_name_fr'] if x['department_name_fr'] != '' else x['Department Name (French)'], axis=1)
+    select_columns.append('department_name_fr')
+
 
     if len(df_standards['fiscal_yr'].unique()) > 1:
         sys.exit('More than 1 year found in the STANDARDS dataset. Each file should only have a single year to process.  Searate years into multiple files and try again running one extract at a time.')

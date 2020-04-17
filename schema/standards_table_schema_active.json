@@ -15,6 +15,20 @@
             }
         },
         {
+            "name": "service_name_en",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "service_name_fr",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
             "name": "service_std_id",
             "type": "string",
             "constraints": {
@@ -127,6 +141,20 @@
             "type": "string",
             "constraints": {
                 "required": false
+            }
+        },
+        {
+            "name": "department_name_en",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "department_name_fr",
+            "type": "string",
+            "constraints": {
+                "required": true
             }
         }
     ]
