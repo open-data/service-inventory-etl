@@ -28,7 +28,6 @@ try:
 except:
     environment = 'staging'
 
-
 # *********************************************************
 # Look for configuration.json in the config folder and load 
 # required secrets and API keys.  Use the configuration.template.json 

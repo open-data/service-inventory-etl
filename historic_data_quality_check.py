@@ -14,7 +14,10 @@ standards_files_to_test = []
 
 df_services = pd.read_excel(historic_spreadsheet_file, sheet_name='Services', encoding='utf-8', na_filter=False)
 df_services['use_of_sin'] = df_services['use_of_sin'].apply(lambda x: x if x != '' else 'ND')
-df_services['info_service'] = df_services['info_service'].apply(lambda x: x if x != '' else 'ND')
+#df_services['info_service'] = df_services['info_service'].apply(lambda x: x if x != '' else 'ND')
+#df_services['service_channels'] = df_services['service_channels'].apply(lambda x: x if x != '' else 'ND')
+df_services['info_service'] = 'ND'
+df_services['service_channels'] = 'ND'
 for yr in df_services['fiscal_yr'].unique():
     outfile = output_path + yr + '_' + services_output_csv
     df_services[df_services['fiscal_yr'] == yr].to_csv(outfile, index=None, header=True, encoding='utf-8-sig')
