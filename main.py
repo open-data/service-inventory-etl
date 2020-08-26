@@ -28,6 +28,10 @@ try:
 except:
     environment = 'staging'
 
+# Publish from VS Code
+#publish_to_portal = True
+#environment = 'production'
+
 
 # *********************************************************
 # Look for configuration.json in the config folder and load 

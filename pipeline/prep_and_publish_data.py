@@ -10,11 +10,10 @@ def run_prep_and_publish(csv_file, endpoint, api_key, dataset_id, resource_id, d
     resource_name = os.path.basename(csv_file)
     
     try:
-        with io.open(csv_file, encoding='utf-8-sig') as f:
-            pkg = reg.action.resource_patch(
-                id=resource_id,
-                upload=(resource_name, f.read())
-            )
+        pkg = reg.action.resource_patch(
+            id=resource_id,
+            upload=open(csv_file, 'rb')
+        )
     except:
         print('\tERROR: Publish failed.')
 
