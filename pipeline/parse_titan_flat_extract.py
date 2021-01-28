@@ -27,7 +27,8 @@ def process_designations(designations):
     designation_lookup = {
         'Priority Service': 'prior',
         'Essential Service': 'essent',
-        'None': 'non'
+        'None': 'non',
+        '': 'non'
     }
     designation_list = []
     for d in designations.split('<>'):
@@ -64,7 +65,7 @@ def process_num_or_ND(count):
 
 def process_performance_calculation(total_volume, volume_meeting_target):
     try:
-        return volume_meeting_target / total_volume
+        return (volume_meeting_target / total_volume)*100
     except:
         return 'ND'
 
@@ -84,7 +85,8 @@ def run_services_transformation(extract_file, output_path, output_file):
         'Fax':'fax',
         'Postal Mail':'post',
         'Other':'oth',
-        'None':'non'
+        'None':'non',
+        '':'ND'
     }
     yesno_field_lookup = {
         'Yes': 'Y',
@@ -124,7 +126,7 @@ def run_services_transformation(extract_file, output_path, output_file):
         'Internal Service':'intern',
         'Internal Enterprise Service':'enterprise'
     }
-    df_services['external_internal'] = df_services['Scope (English)'].apply(lambda x: process_lookup_map(x, external_internal_lookup, ''))
+    df_services['external_internal'] = df_services['Service scope (English)'].apply(lambda x: process_lookup_map(x, external_internal_lookup, ''))
     select_columns.append('external_internal')
 
     # Create service type column
@@ -151,7 +153,7 @@ def run_services_transformation(extract_file, output_path, output_file):
     select_columns.append('service_type')
 
     # Create special designations column
-    df_services['special_designations'] = df_services['Designations (English)'].apply(lambda x: process_designations(x))
+    df_services['special_designations'] = df_services['Special Designations (English)'].apply(lambda x: process_designations(x))
     select_columns.append('special_designations')
 
     # Create service_description_* columns
@@ -176,6 +178,19 @@ def run_services_transformation(extract_file, output_path, output_file):
     df_services['last_GBA'] = df_services['Year of Last GBA+'].apply(lambda x: process_year_to_range(x))
     select_columns.append('last_GBA')
 
+    # Create digital_id_platform column    
+    ident_platform_lookup = {
+        'Cyber Auth/ECM - External (Public) credential and authentication (GCKey, CBS)':'ex_auth',
+        'Sign In Canada':'signin_authenti',
+        'GCpass/ICAS (Internal Centralized Authentication Service)':'gcpass',
+        'ICM - Internal (GC worker) credential and authentication service (myKEY)':'in_auth',
+        'Provinces, Territories and Communities':'PTC',
+        'Other':'oth',
+        '':'ND'
+    }
+    df_services['ident_platform'] = df_services['Digital Identity Platforms (English)'].apply(lambda x: process_lookup_map(x, ident_platform_lookup, ''))
+    select_columns.append('ident_platform')
+
     # Create client_target_groups column
     target_group_lookup = {
         'Persons':'person',
@@ -187,13 +202,13 @@ def run_services_transformation(extract_file, output_path, output_file):
         'Environmental':'enviro',
         '':'ND'
     }
-    df_services['client_target_groups'] = df_services['Target Groups (English)'].apply(lambda x: process_lookup_map(x, target_group_lookup, ''))
+    df_services['client_target_groups'] = df_services['Clients/Target Groups (English)'].apply(lambda x: process_lookup_map(x, target_group_lookup, ''))
     select_columns.append('client_target_groups')
 
     #Create info_service column
     #TODO: Find out where this data point comes from
     #df_services['info_service'] = df_services['Add Titan Extract Column Name'].apply(lambda x: process_Y_N_NA(x))
-    df_services['info_service'] = 'ND'
+    df_services['info_service'] = df_services['Information Service'].apply(lambda x: process_lookup_map(x, yesno_field_lookup, 'NA'))
     select_columns.append('info_service')
 
     # Create service_fee column
@@ -211,20 +226,24 @@ def run_services_transformation(extract_file, output_path, output_file):
     # Create service_channels column
     #TODO: Figure out where this data point comes from
     #df_services['service_channel'] = df_services['Add Titan Extract Column Name'].apply(lambda x: process_lookup_map(x, generic_channel_lookup, ''))
-    df_services['service_channels'] = 'ND'
+    df_services['service_channels'] = df_services['Channel(s) through which the service is offered (English)'].apply(lambda x: process_lookup_map(x, generic_channel_lookup, ''))
     select_columns.append('service_channels')
-
-    # Create online_applications column
-    df_services['online_applications'] = df_services['Online Applications'].apply(lambda x: process_num_or_ND(x))
-    select_columns.append('online_applications')
-
-    # Create web_visits_info_service column
-    df_services['web_visits_info_service'] = df_services['Website Visits'].apply(lambda x: process_num_or_ND(x))
-    select_columns.append('web_visits_info_service')
 
     # Create calls_received column
     df_services['calls_received'] = df_services['Telephone Enquiries'].apply(lambda x: process_num_or_ND(x))
     select_columns.append('calls_received')
+    
+    # Create web_visits_info_service column
+    df_services['web_visits_info_service'] = df_services['Website Visits'].apply(lambda x: process_num_or_ND(x))
+    select_columns.append('web_visits_info_service')
+    
+    # Create online_applications column
+    df_services['online_applications'] = df_services['Online Applications'].apply(lambda x: process_num_or_ND(x))
+    select_columns.append('online_applications')
+
+    # Create telephone_applications column
+    df_services['telephone_applications'] = df_services['Telephone Applications'].apply(lambda x: process_num_or_ND(x))
+    select_columns.append('telephone_applications')
 
     # Create in_person_applications column
     df_services['in_person_applications'] = df_services['In Person Applications'].apply(lambda x: process_num_or_ND(x))
@@ -298,7 +317,8 @@ def run_standards_transformation(extract_file, output_path, output_file):
         'Fax':'fax',
         'Postal Mail':'post',
         'Other':'oth',
-        'None':'non'
+        'None':'non',
+        '':'ND'
     }
 
     # Create fiscal_yr column
@@ -320,9 +340,9 @@ def run_standards_transformation(extract_file, output_path, output_file):
     select_columns.append('service_std_id')
 
     # Create service_std_* columns
-    df_standards['service_std_en'] = df_standards['Standard Name (English)']
+    df_standards['service_std_en'] = df_standards['Service Standards (English)']
     select_columns.append('service_std_en')
-    df_standards['service_std_fr'] = df_standards['Standard Name (French)']
+    df_standards['service_std_fr'] = df_standards['Service Standards (French)']
     select_columns.append('service_std_fr')
 
     # Create service_std_url_* columns

@@ -30,7 +30,7 @@ except:
 
 # Publish from VS Code
 #publish_to_portal = True
-#environment = 'production'
+#environment = 'staging'
 
 
 # *********************************************************
@@ -56,7 +56,7 @@ except:
 print('\nConverting Services YAML schema to JSON schema')
 
 # The tables folder for the target branch
-base_git_url = 'https://raw.githubusercontent.com/Jmikelittle/ckanext-canada/DPOR_changes/ckanext/canada/tables/'
+base_git_url = 'https://raw.githubusercontent.com/Jmikelittle/ckanext-canada/DPOR_changes2/ckanext/canada/tables/'
 
 # The filename for the target YAML
 yaml_schema_file = 'service.yaml'
