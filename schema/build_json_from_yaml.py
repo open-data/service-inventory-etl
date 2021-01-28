@@ -127,7 +127,7 @@ def run_conversion(base_git_url, resource_id, yaml_file, json_schema_file, json_
 
 # DEBUG
 """
-base_git_url = 'https://raw.githubusercontent.com/Jmikelittle/ckanext-canada/DPOR_changes/ckanext/canada/tables/'
+base_git_url = 'https://raw.githubusercontent.com/Jmikelittle/ckanext-canada/DPOR_changes2/ckanext/canada/tables/'
 yaml_schema_file = 'service.yaml'
 json_schema_file = 'schema/service_table_schema.json'
 services_resource_id = 0 
