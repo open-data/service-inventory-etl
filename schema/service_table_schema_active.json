@@ -113,6 +113,13 @@
             }
         },
         {
+            "name": "ident_platform", 
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
             "name": "client_target_groups",
             "type": "string",
             "constraints": {
@@ -152,12 +159,12 @@
             "type": "string"
         },
         {
-            "name": "online_applications",
+            "name": "calls_received",
             "type": "string",
             "constraints": {
                 "required": true
             }
-        },
+        },           
         {
             "name": "web_visits_info_service",
             "type": "string",
@@ -166,7 +173,14 @@
             }
         },
         {
-            "name": "calls_received",
+            "name": "online_applications",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "telephone_applications",
             "type": "string",
             "constraints": {
                 "required": true
