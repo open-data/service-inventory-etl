@@ -1,0 +1,1809 @@
+service_inventory_base_html_title:
+  en: GC Service Inventory
+  fr: Répertoire de service du GC
+
+service_inventory_app_title:
+  en: GC Service Inventory
+  fr: Répertoire de services du GC
+
+Service:
+  en: Service
+  fr: Service
+
+service_id:
+  en: Service ID
+  fr: ID de service
+
+
+Services:
+  en: Services
+  fr: Services
+
+Services_inventory:
+  en: Service Inventory
+  fr: Répertoire de services
+
+service_name_english:
+  en: Service Name (English)
+  fr: Nom du service (anglais)
+
+service_name_french:
+  en: Service Name (French)
+  fr: Nom du service (français)
+
+service-standard:
+  en: Service Standard
+  fr: Norme de services
+
+service-standards:
+  en: Service Standards
+  fr: Normes de services
+
+Add-Service:
+  en: Add Service
+  fr: Ajouter un service
+
+title-service-standards:
+  en: Service Standards
+  fr: Normes de service
+
+add-service-standard:
+  en: Add Service Standard
+  fr: Ajouter une norme de service
+
+edit-service:
+  en: Edit Service
+  fr: Modifier le service
+
+edit-service-standard:
+  en: Edit Service Standard
+  fr: Modifier la norme de service
+
+Links:
+  en: Links
+  fr: Liens
+
+Reports:
+  en: Reports
+  fr: Rapports
+
+Changelog:
+  en: Changelog
+  fr: Journal des changements
+
+first-active-year:
+  en: First active year
+  fr: Première année active
+
+last-active-year:
+  en: Last active year
+  fr: Dernière année active
+
+year:
+  en: Year
+  fr: Année
+
+scope:
+  en: Service Scope
+  fr: Portée du service 
+
+scope_description:
+  md: true
+
+  en: >-
+   Identify the service as an external service, internal enterprise service, and/or internal service. Select all that apply. For more information, please refer to the [Guideline on Service and Digital](https://gccollab.ca/file/view/5092896/enguideline-on-service-and-digital-version-11frligne-directrice-sur-les-services-et-le-numu00e9rique-version-11-en-anglais).
+   
+   * An external service can be defined as a service where the intended recipient is external to the Government of Canada (GC). 
+   
+   * An internal enterprise service can be defined as a service provided by a GC department to other GC departments on a government-wide basis (they may be provided to several or all departments). 
+   
+   * Internal enterprise services are distinct from internal services, which are provided within a department.
+  fr: >-
+   Précisez que le service est un service externe ou un service interne intégré et/ou un service interne. Sélectionnez tout ce qui s'y rapporte. Pour obtenir de plus amples renseignements, veuillez vous référer à la [Ligne directrice sur les services et le numérique](https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11).
+   
+   * Un service externe peut être défini comme un service dans le cadre duquel le bénéficiaire visé est à l’extérieur du gouvernement du Canada (GC). 
+   
+   * Un service intégré interne peut être défini comme un service fourni par un ministère du GC à d’autres ministères du GC à l’échelle de l’ensemble du gouvernement (ce service peut être offert à plusieurs ministères ou à la totalité de ceux-ci). 
+   
+   * Les services intégrés internes se distinguent des services internes, qui sont offerts au sein d’un ministère.
+
+service-type:
+  en: Service Type
+  fr: Type de service
+
+designations:
+  en: Special Designations
+  fr: Désignations spéciales
+
+target-groups:
+  en: Clients/Target Groups
+  fr: Clients/Groupes cibles
+
+uses-cra-business-number:
+  en: Use of CRA Business Number as Standard Identifier
+  fr: Utilisation du numéro d'entreprise de l'ARC comme identifiant
+
+uses-sin-number:
+  en: Use of SIN Number as Standard Identifier
+  fr: Utilisation du numéro d'assurance sociale (NAS) comme identifiant
+
+collects-fees:
+  en: Service Fee
+  fr: Frais de service
+
+fee-comment-en:
+  en: Other service fee information (English)
+  fr: Autre information sur les frais de services (anglais)
+
+fee-comment-fr:
+  en: Other service fee information (French)
+  fr: Autre information sur les frais de services (français)
+
+last-gba-analysis:
+  en: Last GBA+ Completed Since Fiscal Year 2014-15 
+  fr: Dernière ACS+ terminée depuis l'exercice financier de 2014-2015
+
+last-gba-analysis-types:
+  en: Last GBA+ Analysis Completed Types
+  fr: Type d'analyse pour la dernière analyse d'ACS+ terminée
+
+feedback-channels:
+  en: Feedback Channels
+  fr: Chaînes de commentaires
+
+feedback-channels-vb:
+  en: Feedback on Level of Satisfaction, By Channel 
+  fr: Mécanismes de rétroactions sur le niveau de satisfaction par mode de prestation
+
+authorities-english:
+  en: Authorities (English)
+  fr: Autorités (anglais)
+
+authorities-french:
+  en: Authorities (French)
+  fr: Autorités (français)
+
+digital-enablement:
+  en: Online Services - Six Client Interaction Points
+  fr: Services en ligne - Six points d'interaction avec les clients
+
+associated-programs:
+  en: Associated Programs
+  fr: Programmes connexes
+
+digital-enablement-comment-en:
+  en: Comments related to Online Services - Client Interaction Points (English)
+  fr: Commentaires liés aux services en ligne - Points d'interaction liés aux clients (anglais)
+
+digital-enablement-comment-fr:
+  en: Comments related to Online Services - Client Interaction Points (French) 
+  fr: Commentaires liés aux services en ligne - Points d'interaction liés aux clients (français) 
+
+digital-enablement-comment-desc:
+  en: Comments related to Online Services - Client Interaction Points. Explain why one or multiple interaction points have been marked as "Not Applicable".
+  fr: Commentaires liés aux services en ligne - Points d'interaction liés aux clients. Veuillez expliquer pourquoi un ou plusieurs points d'interaction ont été marqué comme « Sans Objet ».
+
+service-first-active-year-ht:
+  en: The first year a service became available
+  fr: La première année où le service est devenu disponible
+
+service-last-active-year-ht:
+  en: The final year in which the service was available
+  fr: La dernière année où le service était disponible
+
+service-target-groups-ht:
+  en: Select all applicable clients/target groups of the service
+  fr: Sélectionnez tous les clients/groupes cibles du service pertinents
+
+service-uses-cra-bus-num-ht:
+  en: Indicate if a CRA business number is required for the provision of this service
+  fr: Préciser si un numéro d'entreprise de l'ARC est nécessaire pour la prestation de ce service
+
+service-uses-sin-ht:
+  en: Indicate if a SIN number is required for the provision of this service
+  fr: Préciser si un numéro d'assurance sociale est nécessaire pour la prestation de ce service
+
+service-fee-collected-ht:
+  en: Indicate if fees are collected for the provision of this service
+  fr: Veuillez préciser si des frais sont prélevés pour la prestation de ce service. 
+
+service-last-gba-desc:
+  en: The fiscal year of the most recent Gender-Based Analysis Plus (GBA+) completed for the service, or related program, since 2014-15.
+  fr: L'exercice financier de la plus récente Analyse comparative entre les sexes plus (ACS+) complété pour le service, ou d'un programme connexe, depuis 2014-2015.
+
+service-last-gba-types-ht:
+  en: The types associated with the last GBA+ analysis
+  fr: Les types liés à la plus récente analyse d'ACS+
+
+service-feedback-channels-desc:
+  en: Identifies which service delivery channels the department uses to collect feedback from clients. Feedback could be general, or specific to a service. Select all that apply.
+  fr: Précise les canaux de prestation qu'utilise un ministère pour obtenir la rétroaction des clients. La rétroaction pourrait être générale ou propre à un service. Sélectionnez toutes les réponses qui s'appliquent.
+
+service-authorities-en-ht:
+  en: The instrument granting the authority for the service to be provisioned (English)
+  fr: L'instrument responsable d'accorder l'autorité nécessaire pour l'approvisionnement du service (anglais)
+
+service-authorities-fr-ht:
+  en: The instrument granting the authority for the service to be provisioned (French)
+  fr: L'instrument responsable d'accorder l'autorité nécessaire pour l'approvisionnement du service (français)
+
+service-digital-enablement-desc:
+  md: true
+  en: >-  
+   Indicate whether a service is e-enabled on key interaction points, as applicable to the specific service. 
+   * If the interaction point is marked as 'Not applicable', please provide a rationale. 
+   * If the interaction point is applicable to the service and is e-enabled, select 'yes'. 
+   * If the interaction point is applicable at the service, but is not currently e-enabled, select 'No'. 
+  fr: >-  
+   Préciser si un service est de nature électronique selon les principaux points d'interaction, tel qu'il s'applique à un service en particulier. 
+   * Si le point d'interaction est « sans objet », veuillez fournir une explication. 
+   * Si le point s'applique au service et est de nature électronique, veillez sélectionner « Oui ». 
+   * Si le point d'interaction s'applique au service, mais il n'est pas actuellement de nature électronique, veillez sélectionner « Non ». 
+
+service-programs-desc:
+  en: The Program(s) under which the service is delivered.
+  fr: Le ou les programmes sous lesquels le service est offert. 
+
+service_name_description:
+  en: Identify the official name of the service. There may be multiple services under a program.
+  fr: Précisez le titre officiel du service. Il peut y avoir plusieurs services sous un seul programme.
+
+service_desc_description:
+  en: A brief (one or two sentences) description of the service, and the need it meets.
+  fr: Une brève description (en une ou deux phrases) du service et du besoin auquel il répond.
+
+service_type_description:
+ md: true
+ en: >- 
+  Identifies the external, internal enterprise or internal service type, as outlined in the [Guideline on Service and Digital](https://gccollab.ca/file/view/5092896/enguideline-on-service-and-digital-version-11frligne-directrice-sur-les-services-et-le-numu00e9rique-version-11-en-anglais) and as prescribed in the [Policy on Results](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=31306) (for Internal Services). 
+ fr: >- 
+  Précise le type de service externe, interne intégré ou interne, tel que défini dans la [Ligne directrice sur les services et le numérique](https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11).
+
+service_designation_description:
+ md: true
+ en: >-
+  Whether the service has been identified as a priority service, a critical service and/or an essential service by the department. More than one designation can be listed. 
+  
+  
+  Priority services are external and internal services, determined by departments, based on a number of considerations, including volume per channel, importance of the service to clients or use of sensitive personal or commercial information. 
+  
+  
+  Critical services are defined in the [Policy on Government Security](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578).
+
+  
+  Essential services are defined in the [Federal Public Sector Labour Relations Act](https://laws-lois.justice.gc.ca/eng/acts/p-33.3/page-8.html#h-405474).
+
+
+  For more information, please refer to the [Guideline on Service and Digital](https://gccollab.ca/file/view/5092896/enguideline-on-service-and-digital-version-11frligne-directrice-sur-les-services-et-le-numu00e9rique-version-11-en-anglais).
+ fr: >-
+  À savoir si le service a été identifié comme étant un service prioritaire, un service critique et/ou un service essentiel par le ministère. Il est possible de lister plus d’une désignation. 
+
+
+  Les services prioritaires sont externes et internes, et sont déterminés par les ministères selon le nombre de points desquels on doit tenir compte, y compris le volume par canal, l'importance du service aux yeux du clients, ou l'utilisation de renseignements personnels de nature délicate ou commerciale.
+
+
+  Les services critiques sont définis dans la [Politique sur la sécurité du gouvernment](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=16578).
+
+  
+  Les services essentiels sont définis dans la [Loi sur les relations de travail dans le secteur public fédéral](https://laws-lois.justice.gc.ca/fra/lois/p-33.3/page-8.html#h-395935).
+
+
+  Pour obtenir de plus amples renseignements veuillez consulter la [Ligne directrice sur les services et le numérique](https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11).
+
+service_target_group_description:
+ md: true
+ en: >- 
+  Identify the clients or target groups of the service. More than one group can be selected. Should you require further clarification with regards to these categories, please consult the [Standard on Tagging in the Policy on Results](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=31306).
+ fr: >- 
+  Précisez les clients or les groupes de service ciblés. Il est possible de lister plus d'un groupe. Si vous avez besoin de précisions supplémentaires par rapport à ces catégories, veuillez consulter la [Norme sur l'étiquetage prévue dans la Politique sur les résultats](https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=31306).
+
+service_cra_business_description:
+ md: true
+ en: >-
+  For services to business, identify if the CRA Business Number has been collected. Select 'Not Applicable' if the service is not provided to businesses (e.g. Employment Insurance, Old Age Security), or if the identification of the business is not required in the delivery of the service (e.g. Weather forecast, Border Information Service, Access to Information, Labour Market Information). Note: CRA Business Number will automatically default to ‘Not Applicable’ when a department selects ‘Yes’ for the Information Service field. 
+ fr: >-
+  Pour les services aux entreprises, indiquez si le numéro d’entreprise de l’ARC a été recueilli. Sélectionnez « Sans objet » si le service n’est pas fourni aux entreprises (p. ex., assurance-emploi, Sécurité de la vieillesse) ou si l’identification de l’entreprise n’est pas requise dans la prestation du service (p. ex., prévisions météorologiques, Service d’information sur la frontière, Accès à l’information, Information sur le marché du travail). Remarque : Par défaut, le numéro d’entreprise de l’ARC est « Sans objet » lorsqu’un ministère sélectionne « Oui » pour le champ Service d'information.
+
+service_sin_description:
+ md: true
+ en: >-
+  For services to individuals, identify if the SIN is used. Select 'Not Applicable' if the service is not provided to an individual (e.g. Duty Free Shop Licence Application, EI Premium Reduction), or if the identity of the recipient is not required in the delivery of the service (e.g. Weather forecast, Border Information Service, Access to Information, Labour Market Information). Note: SIN will automatically default to ‘Not Applicable’ when a department selects ‘Yes’ for the Information Service field.
+ fr: >-
+  Pour les services aux particuliers, indiquez si le NAS est utilisé. Sélectionnez « Sans objet » si le service n’est pas fourni à un particulier (p. ex., demande de permis d’exploitation de boutique hors taxes, réduction du taux de cotisation d’assurance-emploi) ou si l’identité du destinataire n’est pas requise pour la prestation du service (p. ex., prévisions météorologiques, Service d’information sur la frontière, Accès à l’information, Information sur le marché du travail). Remarque : Par défaut, le NAS indique « Sans objet » lorsqu’un ministère sélectionne « Oui » pour le champ Service d'information.
+
+service_fees_description:
+  md: True
+  en: A yes/no value that indicates whether a user fee is collected for the service (for details, consult the [Service Fees Act](https://laws-lois.justice.gc.ca/eng/acts/S-8.4/)).
+  fr: Une valeur oui/non indiquant si des frais sont perçus pour le service (pour obtenir des détails, consultez la _[Loi sur les frais de service](https://laws-lois.justice.gc.ca/fra/lois/S-8.4/)_).
+
+service-link-name-en:
+  en: Name of the Website associated with the URL (English)
+  fr: Nom du site Web associé au l'adresse URL (anglais)
+
+service-link-name-fr:
+  en: Name of the Website associated with the URL (French)
+  fr: Nom du site Web associé au l'adresse URL (français)
+
+service-link-value-en:
+  en: URL to Website (English)
+  fr: URL du site Web (anglais)
+
+service-link-value-fr:
+  en: URL to Website (French)
+  fr: URL du site Web (français)
+
+service-name-ht:
+  en: The official name of the service
+  fr: Le nom officiel du service
+
+service-desc-ht:
+  en: Describe what the service does
+  fr: Décrivez ce que le service fait
+
+select-applicable:
+  en: Select all that apply
+  fr: Sélectionnez tout ce qui s'y rapporte
+
+select_two_applicable:
+  en: Select up to 2 types
+  fr: Sélectionnez jusqu'à deux types
+
+select_at_least_one_program:
+  en: Please select at least one program
+  fr: Veuillez sélectionner au moins un programme
+
+to-business-desc:
+  en: Is this service delivered to businesses?
+  fr: Ce service est-il fourni aux entreprises?
+
+to-individuals-desc:
+  en: Is this service delivered to individuals?
+  fr: Ce service est-il fourni à des particuliers?
+
+service-to-businesses:
+  en: Service to Businesses
+  fr: Service aux entreprises
+
+service-to-individuals:
+  en: Service to Individuals
+  fr: Service aux particuliers
+
+link-display-name:
+  en: Provide a plain language reference for the URL link added
+  fr: Fournir une référence en langage clair pour le lien URL ajouté
+
+link-value-desc:
+  md: true
+  en: >-
+   * If the "Service" category was chosen, identify the departmental Webpage where the service is described and/or can be initiated. 
+   
+   * If the "Standards and Targets" category was chosen, identify the departmental Webpage where the service standards and targets are published.
+   
+   * If the "Real-Time Performance Results" category was chosen, identify the departmental Webpage where real-time performance results for a service are published.
+  fr: >-
+   * Si la catégorie « Service » a été sélectionnée, indiquez la page Web ministérielle où le service est décrit et où il peut-être entamé.
+
+   * Si la catégorie « Normes de service et les cibles » a été sélectionnée, indiquez la page Web ministérielle sur laquelle sont publiées les normes et les cibles relatives aux services.
+
+   * Si la catégorie « Résultats du rendement en temps réel » a été sélectionnée, indiquez la page Web ministérielle sur laquelle sont publiées les résultats du rendement en temps réels. 
+
+link-value-fr:
+  en: Provide the valid URL to the French Website
+  fr: Veuillez fournir le lien URL du site en français
+
+missing-other-need-comment:
+  en: You must provide a comment if any values are missing.
+  fr: Vous devez fournir un commentaire si des valeurs sont manquantes.
+
+standard_name_english:
+  en: Service Standards (English)
+  fr: Normes de service (anglais)
+
+standard_name_french:
+  en: Service Standards (French)
+  fr: Normes de service (français)
+
+service-standard-desc:
+  en: Some help text
+  fr:
+
+standard-name-desc:
+  en: Identify the service standard related to a particular service. A service standard is a public commitment to a measurable level of performance that clients can expect under "normal circumstances" (expected level of demand for regular day-to-day service operations).
+  fr: Indiquez la norme de service liée à un service en particulier. Une norme de service est un engagement public de fournir un niveau de rendement mesurable auquel peuvent s'attendre les clients dans des « circonstances normales » (niveau de demande prévu pour des activités quotidiennes de service régulière).
+
+standard-gcss-ht:
+  en: Some help text
+  fr:
+
+gcss-null-choice:
+  en: Not assessed with GCSS tool
+  fr: Non évalué avec l'outil GCSS
+
+standard-gcss-desc:
+  en: Identifies the fiscal year in which the service standard was last reviewed using the GC Service Standard assessment tool available on the GC Service Policy GCpedia page.
+  fr: Précise l'exercice financier au cours duquel la norme de service a été examinée pour la dernière fois à l'aide de l'outil d'évaluation des normes de service du GC disponible sur à la page GCpédia de la Politique sur les services du GC.
+
+
+standard-type-desc:
+  md: True
+  en: >-
+   Identify the type of service standard as defined in the Guideline on Service and Digital. There are generally three types of service standards
+   1. **Access Standard** - a commitment outlining the ease and convenience the client should experience when attempting to access a service.
+   2. **Timeliness Standard** - a commitment stating how long the client should expect to wait to receive a service once the service has been accessed.
+   3. **Accuracy Standard** - a commitment stipulating that the client will receive a service that is up to date, free of errors, and complete.
+
+
+   Select "Other" if the service standard does not fall under one of these three categories.
+
+  
+  fr: >-
+   Précisez le type de norme de service, selon les définitions qui se trouvent dans la Ligne directrice sur les services et le numérique. Il y a généralement trois types de normes de service.
+   1. **Norme d'accès** - un engagement qui décrit la facilité d'emploi que devrait connaître le client lorsqu'il essaie d'accéder à un service.
+   2. **Norme de rapidité** - un engagement qui indique le temps d'attente que devrait connaître le client pour recevoir in service une fois qu'il y a accédé.
+   3. **Norme d'exactitude** - un engagement qui stipule que le client recevra un service complet et à jour qui est exempt d'erreurs. 
+
+
+   Sélectionnez « autre » si la norme de service ne relève d'aucune de ces trois catégories.
+
+standard-target-desc:
+  md: True
+  en: >-
+    Identify the service standard target as a percentage. A service standard target is defined as the frequency (often expressed as a percentage) that the organization expects to meet the service standard. For example, we will meet our service standard 90%% of the time. 
+    
+    
+    For standards not of this form, choose "Other type of target", and there will be no targets or reporting associated with the standard. 
+    
+    
+    **Note that the target type cannot be changed.** If the wrong type was selected, you will need to "Delete" this Service Standard and create a new one with the correct target type.
+  fr: >-
+    Précisez la cible de la norme de service en pourcentage. Une cible de norme de service est définie comme la fréquence (souvent exprimée en pourcentage) à laquelle l'organisation s'attend à atteindre la norme de service. Par exemple, nous atteindrons notre norme de service dans 90%% du temps. 
+    
+    
+    Pour les normes qui ne sont pas de cette forme, sélectionnez « Autre type de cible » et aucune cible ne sera associée à la norme. 
+    
+    
+    **Veuillez prendre note que le type de cible ne peut pas être modifié**. Si vous avez sélectionné le mauvais type de cible par erreur, vous devrez « Supprimer » cette norme de service et créer une nouvelle norme avec un type de cible différent.
+    
+target-type-ht:
+  en: Target type cannot be changed. See instructions below for steps to follow to make a change.
+  fr: Le type de cible ne peut pas être modifié. Voir ci-dessous pour les étapes à suivre pour faire le changement.
+
+standard-rprt-lower-desc:
+  en: Identify the service standard target as a percentage. A service standard target is defined as the frequency (often expressed as a percentage) that the organization expects to meet the service standard. For example, we will meet our service standard 90%% of the time. 
+  fr: Indiquez la cible de la norme de service en pourcentage. Une cible de norme de service est définie comme la fréquence (souvent exprimée en pourcentage) à laquelle l'organisation s'attend à atteindre la norme de service. Par exemple, nous atteindrons notre norme de service dans 90%% du temps. 
+
+standard-target-name-percentage:
+  en: Service Standard Target 
+  fr: Cible de la norme de service
+
+standard-rprt-upper-ht:
+  en: The largest value for which the target is considered met
+  fr: La plus grande valeur pour laquelle l'objectif est considéré comme atteint
+
+standard-rprt-desc-ht:
+  en: Additional space for comments, as required. Identify the field name the comment is in reference to.
+  fr: Espace supplémentaire pour des commentaires, selon le besoin. Indiquez le nom du champ auquel le commentaire se réfère. 
+
+bernoulli-target-choice-desc:
+  en: Percentage of outcomes
+  fr: Pourcentage des résultats
+
+other-target-choice-desc:
+  en: Other type of target
+  fr: Autre type de cible
+
+standard-gscc-name:
+  en: Year of last review using GC Service Standard Assessment Tool
+  fr: L'année du dernier examen utilisant l'outil d'évaluation des normes de service du GC
+
+standard-report-missing-values:
+  en: All numeric values must be entered
+  fr: Toutes les valeurs numériques doivent être consignées
+
+target-bound-error:
+  en: 'The target needs to be between 0 and 100'
+  fr: 'La cible doit être comprise entre 0 et 100'
+
+target-count-error:
+  en: The total volume must be at least the volume that met the target
+  fr: Le volume total doit être au moins égal au volume correspondant à la cible
+
+other-target-missing-data:
+  en: Fill out all the fields.
+  fr: Remplissez tous les champs.
+
+bernoulli-form-lower-label:
+  en: Target
+  fr: Cible
+
+bernoulli-form-upper-label:
+  en: Target upper bound
+  fr: Limite supérieure de la cible
+
+### Service Reports ###
+
+count_number:
+  en: Only include numbers
+  fr: Inclure seulement des nombres
+
+phone-inquiry-and-application-count:
+  en: Number of Telephone Enquiries and Applications
+  fr: Nombre de demandes téléphoniques et d'applications
+
+phone-inquiry-count:
+  en: Number of Telephone Enquiries
+  fr: Nombre de demandes téléphoniques
+
+online-inquiry-count:
+  en: Number of Website Visits (Information-Based Services)
+  fr: Nombre de visites sur le site (service axés sur l'information)
+
+phone-application-count:
+  en: Number of Telephone Applications
+  fr: Nombre d'applications par téléphone
+
+online-application-count:
+  en: Number of Online Applications
+  fr: Nombre d'applications en ligne
+
+live-application-count:
+  en: Number of In-Person Applications
+  fr: Nombre de demandes en personne
+
+# email-application-count:
+#   en: Number of email applications
+#   fr:
+
+# fax-application-count:
+#   en: Number of fax applications
+#   fr:
+
+mail-application-count:
+  en: Number of Applications by Mail
+  fr: Nombre de candidatures par courrier
+
+phone-inquiry-count-desc:
+  md: true
+  en: >-
+    Identifies the number of telephone calls received in the fiscal year for the service. 
+
+    * If the service is not provided through the particular channel, leave the number of applications as unspecified (i.e. blank) and provide a rationale in the English and French comment boxes.
+   
+    * If it is offered by the channel, but not tracked, enter zero. In both cases and provide a rationale in the English and French comment boxes.
+   
+    * If it is offered by that channel, but did not receive any volumes, enter zero.
+
+
+  fr: >-
+    Précisez le nombre d'appels téléphoniques reçus au cours de l'exercice financier pour le service. 
+
+    * Si le service n'est pas offert par le mode de donné, ne précisez pas le nombre de demandes (c’està-dire, ne rien n’inscrire) et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais n’est pas suivi, inscrivez zéro et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais que vous n’avez pas reçu de volumes, inscrivez zéro.
+
+online-inquiry-count-desc:
+  md: true
+  en: >-
+    Identifies the number of Website visits in the fiscal year for obtaining the information-based services. 
+
+    * If the service is not provided through the particular channel, leave the number of applications as unspecified (i.e. blank) and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by the channel, but not tracked, enter zero. In both cases and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by that channel, but did not receive any volumes, enter zero.
+
+  fr: >-
+    Précisez le nombre de visites sur le site Web au cours de l'exercice financier pour obtenir des services axés sur l'information.
+
+    * Si le service n'est pas offert par le mode de donné, ne précisez pas le nombre de demandes (c’està-dire, ne rien n’inscrire) et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais n’est pas suivi, inscrivez zéro et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais que vous n’avez pas reçu de volumes, inscrivez zéro.
+
+phone-application-count-desc:
+  md: true
+  en: >-
+    Identifies the number of applications submitted by telephone in the fiscal year. 
+
+    * If the service is not provided through the particular channel, leave the number of applications as unspecified (i.e. blank) and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by the channel, but not tracked, enter zero. In both cases and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by that channel, but did not receive any volumes, enter zero.
+  fr: >-
+    Précisez le nombre de demandes soumises par téléphone au cours de l'exercice financier par l'entremise du mode de prestation en ligne. 
+   
+    * Si le service n'est pas offert par le mode de donné, ne précisez pas le nombre de demandes (c’està-dire, ne rien n’inscrire) et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais n’est pas suivi, inscrivez zéro et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais que vous n’avez pas reçu de volumes, inscrivez zéro.
+
+online-application-count-desc:
+  md: true
+  en: >-
+    Identifies the number of applications submitted in the fiscal year for the online channel. 
+
+    * If the service is not provided through the particular channel, leave the number of applications as unspecified (i.e. blank) and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by the channel, but not tracked, enter zero. In both cases and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by that channel, but did not receive any volumes, enter zero. 
+  
+  fr: >-
+    Précisez le nombre de demandes soumises au cours de l'exercice financier par l'entremise du mode de prestation en ligne. 
+   
+    * Si le service n'est pas offert par le mode de donné, ne précisez pas le nombre de demandes (c’està-dire, ne rien n’inscrire) et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais n’est pas suivi, inscrivez zéro et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais que vous n’avez pas reçu de volumes, inscrivez zéro.
+
+live-application-count-desc:
+  md: true
+  en: >-
+    Identifies the number of applications submitted in-person in the fiscal year for the service. 
+  
+    * If the service is not provided through the particular channel, leave the number of applications as unspecified (i.e. blank) and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by the channel, but not tracked, enter zero. In both cases and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by that channel, but did not receive any volumes, enter zero.
+
+  fr: >-
+    Précisez le nombre de demandes soumises en personne au cours de l'exercice financier pour le service. 
+   
+    * Si le service n'est pas offert par le mode de donné, ne précisez pas le nombre de demandes (c’està-dire, ne rien n’inscrire) et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais n’est pas suivi, inscrivez zéro et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+    
+    * S’il est offert par ce mode, mais que vous n’avez pas reçu de volumes, inscrivez zéro
+   
+
+email-application-count-desc:
+  md: true
+  en: >-
+    FIXME
+  fr: >-
+    FIXME
+
+# fax-application-count-desc:
+#   en: Number of fax applications
+#   fr:
+
+mail-application-count-desc:
+  md: true
+  en: >-
+    Identifies the number of applications submitted by mail in the fiscal year for the service. 
+
+    * If the service is not provided through the particular channel, leave the number of applications as unspecified (i.e. blank) and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by the channel, but not tracked, enter zero. In both cases and provide a rationale in the English and French comment boxes.
+    
+    * If it is offered by that channel, but did not receive any volumes, enter zero.
+
+  fr: >-
+    Précisez le nombre de demandes soumises par la poste au cours de l'exercice financier pour le service. 
+   
+    * Si le service n'est pas offert par le mode de donné, ne précisez pas le nombre de demandes (c’està-dire, ne rien n’inscrire) et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+   
+    * S’il est offert par ce mode, mais n’est pas suivi, inscrivez zéro et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+   
+    * S’il est offert par ce mode, mais que vous n’avez pas reçu de volumes, inscrivez zéro
+
+
+year-report-desc:
+  en: The fiscal year for which service business volumes should be reported against
+  fr: L’exercice financier pour lequel les volumes d’activités de service doivent être rapportés
+
+service-report-comment-en:
+  en: Comments (English)
+  fr: Commentaires (anglais)
+
+service-report-comment-fr:
+  en: Comments (French)
+  fr: Commentaires (français)
+
+service-report-comment-desc:
+  en: Provide an explanation for any missing or not applicable values, as well as any special remarks.
+  fr: Fournissez une explication pour toute valeur manquante ou non applicable, ainsi que toute remarque spéciale.
+
+# na-comment-en:
+#   en: Comment if not applicable (English)
+#   fr: Veuillez commenter si tel n'est pas le cas (anglais)
+
+# na-comment-fr:
+#   en: Comment if not applicable (French)
+#   fr: Veuillez commenter si tel n'est pas le cas (français)
+
+toggle-link-activation:
+  en: A link's activation status has been changed.
+  fr: Le statut d'activation d'un lien a été modifié.
+
+standard-report-edit:
+  en: The standard's report has been modified.
+  fr: Le rapport de la norme a été modifié.
+
+# standard-report-matches-published:
+#   en: Results match other publication
+#   fr: Les résultats correspondent à une autre publication
+
+# standard-report-matches-published-comment-en:
+#   en: Explanation if not matching other publication (English)
+#   fr: Fournir une explication s<il ne correspond pas à une autre publication (anglais)
+
+# standard-report-matches-published-comment-fr:
+#   en: Explanation if not matching other publication (French)
+#   fr: Fournir une explication s<il ne correspond pas à une autre publication (français)
+
+service-created-success:
+  en: You have successfully created a Service.
+  fr: Vous avez créé avec succès un service.
+
+service-edit-success:
+  en: The Service was successfully updated
+  fr: Le service a été modifié avec succès
+
+link-edit-success:
+  en: The Web link was successfully updated.
+  fr: Le lien Web a été modifié avec succès
+
+link-created-success:
+  en: You have successfully created a Web link associated with the Service.
+  fr: Vous avez créé avec succès un lien Web associé avec le service.
+
+standard-created-success:
+  en: You have successfully created a Service Standard.
+  fr: Vous avez créé avec succès une norme de service.
+
+standard-edit-success:
+  en: The service standard was successfully updated.
+  fr: La norme de service a été modifié avec succès. 
+
+target-created-success:
+  en: Target Created
+  fr: Cible créée
+
+target-edit-success:
+  en: The Target was successfully updated
+  fr: La cible a été modifié avec succès
+
+enabled:
+  en: Enabled
+  fr: Activé
+
+not-enabled:
+  en: Not Enabled
+  fr: Pas activé
+
+not-applicable:
+  en: Not Applicable
+  fr: Sans objet
+
+digital-enablement-error:
+  en: You must choose exactly one status for each interaction point.
+  fr: Vous devez sélectionner un statut pour chaque point d'interaction.
+
+service-report:
+  en: Service Report
+  fr: Rapport sur le service
+
+standard-report:
+  en: Standard Targets and Results
+  fr: Cibles et résultats pour norme de service
+
+
+service-report-created:
+  en: Service Report created
+  fr: Rapport sur le service créé
+
+service-report-edited:
+  en: Service Report Edited
+  fr: Rapport sur le service modifié
+
+target-year:
+  en: The fiscal year for which you are setting the target.
+  fr: L'exercice financier pour lequel vous établissez votre cible.
+
+gcss-tool-year:
+  en: Year of last Service Standard Review using GC Service Standard Assessment Tool
+  fr: L'année du dernier examen à l'aide de l'outil d'évaluation des normes de service
+
+see-below-error:
+  en: The form has fields with errors to be reviewed. Please scroll down for more details. 
+  fr: Le formulaire contient des champs qui ont des erreurs à corriger. Veuillez défilez vers le bas de la page pour obtenir d'amples détails.
+
+digital-enablement-missing-comment:
+  en: Explain why any key client e-enabled interaction points are 'Not Applicable'.
+  fr: Expliquer pourquoi l'un des points d'interaction avec les clients est « sans objet ».
+
+service-info:
+  en: Service Details
+  fr: Détails du Service
+
+service-business-volumes:
+  en: Report by delivery channel for 
+  fr: Rapport par mode de prestation pour
+
+associated-links:
+  en: Service Inventory - Associated Links
+  fr: Répertoire de services - Liens connexes
+
+no-links:
+  en: No links provided
+  fr: Aucun lien fourni
+
+add-link:
+  en: Add Link
+  fr: Ajouter un lien
+
+add-link-page:
+  en: Add a Web Link related to the Service 
+  fr: Ajouter un lien Web lié au service
+
+edit-link:
+  en: Edit Link
+  fr: Modifier un lien
+
+edit-link-page:
+  en: Edit a Web Link related to the Service 
+  fr: Modifier un lien Web lié au service
+
+report-for:
+  en: Report for
+  fr: Rapport pour
+
+service-standard-details:
+  en: Service Standard Details
+  fr: Détails de la norme de service
+
+target-info:
+  en: Targets and Results for
+  fr: Cibles et résultats pour
+
+edit-target-info:
+  en: Edit Service Standard Targets and Results
+  fr: Modifier les cibles et les résultats pour
+
+no-standards:
+  en: No standards have been provided
+  fr: Aucune norme de service n'a été fournie
+
+bad-standard-type:
+  en: Somehow we ended up with an unexpected standard type.
+  fr: Il semblerait que nous ayons obtenus un type de norme inattendu. 
+
+not-matching-published-comment:
+  en: Comments required if not matching published results
+  fr: Commentaires requis si ne correspond pas au résultats publiés
+
+field-mandatory:
+  en: This field is mandatory
+  fr: Ce champ est obligatoire
+
+min-acceptable-value:
+  en: Target lower bound
+  fr: Limite inférieure de la cible
+
+max-acceptable-value:
+  en: Target upper bound
+  fr: Limite supérieure de la cible
+
+total-vol:
+  en: Total Annual Business Volume
+  fr: Volumes des activités totaux pour l'année
+
+annual-target-vol:
+  en: Annual Business Volume Satisfying Standard
+  fr: Volume d'activités annuelles qui répond à la norme
+
+comment-en:
+  en: Comments (English)
+  fr: Commentaires (anglais)
+
+comment-fr:
+  en: Comments (French)
+  fr: Commentaires (français)
+
+target-met:
+  en: Was the target met?
+  fr: La cible a-t-elle été atteinte?
+
+standard-type:
+  en: Service Standard Type
+  fr: Type de norme de service
+
+target-type:
+  en: Target Type
+  fr: Type de cible
+    
+standard-channel:
+  en: The Channel over which the Standard is administered
+  fr: Mode de prestation par l'entremise duquel la norme est administrée
+
+standard-channel-ht:
+  en: You must create a Standard per channel. Once selected, the channel cannot be changed.
+  fr: Vous devez créer une norme par mode de prestation. Une fois sélectionné, le mode de prestation ne peut pas être modifié.
+
+standard-channel-desc:
+  md: True
+  en: >-
+    Indicates which version of the standard is being measured (Telephone, In-Person, Email, Fax, Postal Mail, Online or Other). Note that a single service standard may have several versions. You may only create a service standard for the channels that were selected on the service.
+    
+    
+    **For each Standard that is administered through more than one channel, you must create separate standards in the application for each channel (i.e. fill out the form with all the required information for each channel).**
+  fr: >- 
+    Indique quelle version de la norme est mesurée (Téléphone, en personne, par courriel, par fax, par la poste, en ligne ou autre). Veuillez prendre note qu'une norme de service peut avoir plusieurs versions. Vous pouvez créer une norme de service seulement pour les modes de prestation qui ont été sélectionnés sur le service.
+    
+
+    **Pour chaque norme qui est administrée par plusieurs modes de prestation, vous devez créer une norme par mode de prestation dans l'application (c.-à-d. remplir le formulaire avec tous les renseignements requis pour chaque mode de prestation).**
+service-type-choices:
+  en: You can pick at most two service types.
+  fr: Vous pouvez sélectionné jusqu'à deux types de services.
+    
+service-designation-none-not-alone:
+  en: You have selected none together with other values
+  fr: Vous avez sélectionné aucun ensemble avec d'autres valeurs
+
+add_service_instruction:
+  md: true
+  en: >-
+   **Only UNCLASSIFIED information can be entered in the application.**
+
+
+   Identify the service using the instructions below. 
+
+  fr: >- 
+   ** Seuls les renseignements NON CLASSIFIÉS peuvent être consignés dans l'application**.
+
+
+   Précisez le service en vous référant aux instructions ci-dessous. 
+    
+change_log_instructions_services:
+  md: true
+  en: >-
+    The **Changelog** is a log or record of all changes made to your service inventory in the application. 
+  fr: >-
+    Le ** Journal des changements** est un registre ou un enregistrement de toutes les modifications apportées à votre répertoire de services dans l'application. 
+
+instructions_services:
+  md: true
+  en: >-
+    Complete or edit the required information on a Service in your Service Inventory. Field descriptions are at the bottom of the page.
+
+    * If this Service was created in a previous year and is no longer active for the current service year, please click on "Retire this Service" at the bottom of the page and follow the instructions.
+
+    * If this Service was created in the current service year and you need to delete it, please click on "Delete this Service" at the bottom of the page.
+  fr: >-
+    Compléter ou modifier l'information requise sur un service dans votre répertoire de services. Les descriptions des champs sont au bas de la page.
+
+    * Si ce service a été crée au cours d'un exercice antérieur et n'est plus disponible pour l'exercice en cours, veuillez cliquer sur « Retirer ce service » au bas de la page et suivre les instructions.
+
+    * Si ce service a été crée pendant l'exercice en cours et que vous devez le supprimer, veuillez cliquer sur « Supprimer ce service » au bas de la page.
+
+service-standards_instructions:
+  md: true
+  en: >-
+    Complete or edit the required information on a Service Standard. Field descriptions are at the bottom of the page.
+
+    * If this Service Standard was created in a previous year and is no longer active for the current service year, please click on "Retire this Service Standard" at the bottom of the page and follow the instructions.
+
+    * If this Service Standard was created in the current service year and you need to delete it, please click on "Delete this Service Standard" at the bottom of the page.
+  fr: >-
+    Compléter ou modifier l'information requise sur la norme de service. Les descriptions des champs sont au bas de la page.
+
+    * Si cette norme de service a été créée au cours d’un exercice antérieur et n'est plus valide pour l’exercice en cours, veuillez cliquer sur « Retirer cette norme service » au bas de la page et suivre les instructions.
+
+    * Si cette norme de service a été créée pendant l’exercice en cours et que vous devez la supprimer, veuillez cliquer sur « Supprimer cette norme service » au bas de la page.
+
+service-standards-report:
+  en: 'Service Standard Volume Report:' 
+  fr: 'Rapport sur le volume pour la norme de service :' 
+
+service-standards-report_instructions:
+  md: true
+  en: >-
+   Enter the Service Standard performance data for the fiscal year. 
+   For Service Standards with a type of target "Percentage of outcomes": 
+   * Enter the service standard performance target and annual business volume. This is used to measure how the service was met. 
+   For Service Standards with a type of target "Other": 
+   * Provide comments to explain why the target is not a Percentage of outcomes. 
+
+  fr: >-
+   Inscrire les données de rendement de la norme de service pour l'exercice financier. 
+   Pour les normes de services avec un type de cible « Pourcentage de résultats »:
+   * Inscrire la cible de rendement de la norme de service et le volume d'entreprise annuel. Cela est utilisé pour mesurer la façon dont la norme a été atteinte. 
+   Pour les normes de services avec un type de cible « Autre »:
+   * Veuillez fournir une explication pourquoi la cible n'est pas un « pourcentage des résultats ».
+
+standard-rprt-upper-desc:
+  md: true
+  en: >-
+    The maximum threshold for meeting the target.
+
+    **Example**: If the target is of the form "get some outcome *at most* 30%% of the time", then the upper bound is 30%% (and the lower bound is 0%%)
+  fr: >-
+
+standard-rprt-count-desc:
+  md: true
+  en: >-
+    Identify the total number of final outputs issued (e.g. payments, requests completed, etc.) for the fiscal year. 
+  fr: >-
+    Indiquez le nombre d'opérations finales effectuées (p.ex., les paiements émis et les demandes complétées, entre autres) au cours de l'exercice financier.
+
+annual-target-vol-count-desc:
+  md: true
+  en: >-
+    Identify the total number of final outputs issued (e.g. payments, requests completed, etc.) for the fiscal year that met the service standard target. 
+  fr: >-
+    Indiquez le nombre d'opérations finales effectuées (p.ex. les paiements émis et les demandes complétées, entre autres) au cours de l'exercice financier qui ont atteint la cible de la norme de service.
+
+standard-rprt-desc:
+  en: Additional space for comments, as required. Identify the field name the comment is in reference to.
+  fr: Espace supplémentaire pour des commentaires, selon le besoin. Indiquez le nom du champ auquel le commentaire se réfère. 
+
+category_name:
+  en: URL Category
+  fr: Catégorie d'URL
+
+#need from OCIO
+target-met-desc:
+  md: true
+  en: >-
+    Indicate if the “Other” type of target has been met and provide a comment, whether or not it was met.
+  fr: >-
+    Indiquez si le type « Other » (autre) de cible a été atteint et faites un commentaire, que la cible ait été atteinte ou non.
+
+service_has_no_standards:
+  en: >-
+    The service "%(serv_name)s" has no service standards, please <a href="%(href)s">create one</a>
+  fr: >-
+    Le service « %(serv_name)s » n'a aucune norme de service, veuillez en <a href="%(href)s">créer</a> une
+
+incomplete_annual_reporting_for_service:
+  en: >-
+    The service "%(service_name)s" has data fields that should be reported on an annual basis that are incomplete. Please <a href="%(href)s"> fill them out</a>.
+  fr: >-
+    Le service « %(service_name)s » a des champs de données qui doivent être rapportés sur une base annuelle qui sont présentement incomplets. Veuillez <a href="%(href)s">les compléter</a>.
+
+incomplete_annual_reporting_for_std:
+  en: >-
+    The service standard "%(std_name)s" has fields that should be reported on an annual basis that are incomplete. Please <a href="%(href)s"> fill them out</a>.
+  fr: >-
+    La norme de service « %(std_name)s » a des champs qui doivent être rapportés sur une base annuelle qui sont présentement incomplets. Veuillez <a href="%(href)s">les compléter</a>.
+
+deactivate_service_standard:
+  en: Retire this Service Standard
+  fr: Retirer cette norme de service
+
+deactivate_service:
+  en: Retire this Service
+  fr: Retirer ce service
+
+this_service_is_deactivated:
+  en: This Service is retired
+  fr: Ce service est retiré
+
+this_std_is_deactivated:
+  en: This Service Standard is retired
+  fr: Cette norme de service est retirée  
+
+disable_service_standard:
+  en: Delete this Service Standard
+  fr: Supprimer cette norme de service
+
+disable_service:
+  en: Delete this Service
+  fr: Supprimer ce service
+
+this_service_is_disabled:
+  en: This Service is deleted
+  fr: Ce service est supprimé
+
+this_std_is_disabled:
+  en: This Service Standard is deleted
+  fr: Cette norme de service est suprimée  
+
+none-target-choice-desc:
+  en: None 
+  fr: Aucun
+
+standard-other-type-comment-en:
+  en: Comments (English) - Required if the Service Standard Type or Channel is "Other"
+  fr: Commentaires (anglais) - Requis si le type ou le mode de prestation de norme est « Autre »
+
+standard-other-type-comment-desc:
+  en: If the Standard Type or Channel is "Other", a brief description (in both English and French) must be provided. 
+  fr: Si le type ou la mode de prestation de norme de service est « Autre », une brève description (en anglais et en français) doit être fournie.
+
+standard-other-type-comment-ht:
+  en: Must be completed if the Service Standard Type or Channel selected is "Other" 
+  fr: Doit être complété si le type ou le mode de prestation de norme sélectionné est « Autre »
+
+standard-other-type-comment-fr:
+  en: Comments (French) - Required if the Service Standard Type or Channel is "Other"
+  fr: Commentaires (français) - Requis si le type ou le mode de prestation de norme est « Autre »
+
+standard-other-type-error:
+  en: Comments are required when the Service Standard Type or Channel selected is "Other". 
+  fr: Les commentaires sont requis lorsque le type ou le mode de prestation de norme de service sélectionné est « Autre ». 
+
+submit:
+  en: Submit
+  fr: Soumettre
+
+submit-fail:
+  en: You must resolve all structural issues before submitting your Service Inventory data to TBS
+  fr: Vous devez résoudre les problèmes structurels avant de soumettre vos données sur votre répertoire de services au SCT
+
+submit-succeed:
+  en: Thank you for successfully submitting your data!
+  fr: Merci d'avoir soumis vos données! 
+
+submission-instructions:
+  md: True
+  en: >-
+    You will be able to submit your data once you have entered all your data for your service inventory and all structural issues have been resolved. 
+    
+    * Please click on **"Submit to TBS"** once you have received the approvals needed to submit your Service Inventory to TBS.
+    
+    * Please contact TBS if you need to make changes after submitting your data.
+
+  fr: >-
+    Vous pourrez soumettre vos données une fois que toutes les données de votre répertoire de services et tous les problèmes structurels ont été résolu. 
+    
+    * Veuillez cliquer sur **« Soumettre au SCT »** une fois que vous avez reçu les approbations nécessaires pour soumettre votre répertoire de services au SCT. 
+
+    * Veuillez contacter le SCT si vous avez des changements à faire après avoir soumis vos données.
+
+submission-instructions_final:
+  md: True
+  en: >-
+    
+    **This application is hosted on a Public Cloud. By submitting your data, you are confirming that:**
+
+    
+    * Your service data was updated in concert with your Designated Official for Service and Chief Security Officer;
+
+    * Your service data is approved for release on open.canada.ca by your department's Deputy Head (or delegate); and
+
+    * Only unclassified data has been entered in this tool.
+
+
+  fr: >-    
+    **Cette application est présenté sur un Nuage public. En soumettant vos données, vous confirmez :**
+    
+
+    * Vos données de service ont été mises à jour en accord avec votre responsable désigné pour le service et le chef de la sécurité ;
+
+    * Vos données de service sont approuvées pour publication sur open.canada.ca par l'administrateur général de votre ministère (ou son délégué) ; et
+    
+    * Seules les données non classifiées sont saisies dans cet outil.
+      
+deactivate_globale_instructions:
+  md: true
+  en: >-
+    To retire a Service, Service Standard and/or Associated Web link (e.g. you are no longer reporting on this service standard or this service no longer exists), you must select the item in your Service Inventory and click on the button 'Retire' at the bottom of the page. 
+
+    * Please contact TBS if you have retired an item by error.
+
+  fr: >-
+    Pour mettre un service à la retraite, une norme de service ou un lien Web (p. ex., la norme n'est plus utilisée ou le service n'existe plus), vous devez sélectionner l'élément dans votre répertoire de services, puis cliquer sur le bouton « Retirer » au bas de la page. 
+
+    * Veuillez communiquer avec le SCT si vous avez retiré un élément par erreur.
+
+
+std_deactivated_success:
+  en: Service Standard successfully retired
+  fr: La norme de service a été retiré avec succès
+
+service_deactivated_success:
+  en: Service successfully retired
+  fr: Service a été retiré avec succès
+  
+deactivate_service_instructions:
+  md: true
+  en: >-
+    Are you sure you want to retire this service? It will not show up in any reports after %(service_year)s nor will its standards nor Web Links.
+
+    To retire a Service (e.g. this service no longer exists), you must click on the button 'Retire' at the bottom of the page. 
+
+  fr: >-
+    Êtes-vous sûr de vouloir retirer ce service? Il ne figurera dans aucun rapport après %(service_year)s, pas plus que ses normes de service ni ses liens Web.
+
+    Pour retirer un service (p. ex. le service n'existe plus), vous devez cliquer sur le bouton « Retirer » au bas de la page. 
+
+deactivate_standard_instructions:
+  en: Are you sure you want to retire this service standard? It will not show up in any reports after %(service_year)s.
+  fr: Êtes-vous certain(e) de vouloir retirer cette norme de service? Il ne figurera dans aucun rapport après %(service_year)s.
+
+disable_globale_instructions:
+  md: true
+  en: >-
+    To delete a Service, Service Standard and/or Associated Web link (e.g. you are no longer reporting on this service standard or this service no longer exists), you must select the item in your Service Inventory and click on the button 'Delete' at the bottom of the page. 
+
+    * Please contact TBS if you have deleted an item by error.
+
+  fr: >-
+    Pour supprimer un service, une norme de service ou un lien Web (p. ex., la norme n'est plus utilisée ou le service n'existe plus), vous devez sélectionner l'élément dans votre répertoire de services, puis cliquer sur le bouton « Supprimer » au bas de la page. 
+
+    * Veuillez communiquer avec le SCT si vous avez supprimé un élément par erreur.
+
+
+std_disabled_success:
+  en: Service Standard successfully deleted
+  fr: La norme de service a été supprimé avec succès
+
+service_disabled_success:
+  en: Service successfully deleted
+  fr: Service a été supprimé avec succès
+  
+disable_service_instructions:
+  en: Are you sure you want to delete this service? It will not show up in any reports after %(service_year)s nor will its standards nor Web Links.
+  fr: Êtes-vous sûr de vouloir supprimer ce service? Il ne figurera dans aucun rapport après %(service_year)s, pas plus que ses normes de service ni ses liens Web.
+
+disable_standard_instructions:
+  en: Are you sure you want to delete this service standard? It will not show up in any reports after %(service_year)s.
+  fr: Êtes-vous certain(e) de vouloir supprimer cette norme de service? Il ne figurera dans aucun rapport après %(service_year)s.
+
+disable_link_instructions:
+  en: Are you sure you want to delete this link? It will no longer appear in any reports.
+  fr: Êtes-vous certain(e) de vouloir supprimer ce lien? Il ne figurera dans aucun rapport.
+
+service-business-volume_instructions:
+  md: true
+  en: >-
+    Enter the volume received by delivery channel in a given fiscal year. Field descriptions are at the bottom of the page. 
+  fr: >-
+    Inscrivez le volume reçu par voie de prestation pour un exercice financier en particulier. Les descriptions des champs sont au bas de la page. 
+
+Service_Inventory_Report:
+  en: Service Inventory Report
+  fr: Rapport du répertoire de services
+
+#Service_Inventory_Report_instructions:
+#  en: Instructions to be added
+#  fr: 
+
+structural-issues:
+  en: Structural Issues
+  fr: Problèmes structurels
+
+structural-issues_instructions:
+  en: You must resolve your structural issues before submitting your Service Inventory Data to TBS. Please read each issue to resolve the problem using the link provided.
+  fr: Vous devez résoudre vos problèmes structurels avant de soumettre vos données sur votre répertoire de services au SCT. Veuillez lire chaque problème structurel pour le résoudre en utilisant le lien fourni. 
+
+scv_name_en_overload:
+  en: There is more than one service with the name "%(service)s".
+  fr: Il y a plus d'un service avec le même nom "%(service)s".
+
+std-overloaded-pseudo-key:
+  en: There are multiple active standards for the service "<a href='%(service_url)s'>%(service_name)s</a>" with the same name (English and/or French) and channel. Please review.
+  fr: Il y a plusieurs normes actives pour le service « <a href='%(service_url)s'>%(service_name)s</a> » avec le même nom (anglais et/ou français) et mode de prestation. Veuillez revoir.
+
+no-submissions:
+  en: No Submissions
+  fr: Aucune soumission
+
+last-submission:
+  en: Last Submission
+  fr: Dernière Soumission
+
+edit-count:
+  en: Number of Edits
+  fr: Nombre de modifications
+
+activate-link:
+  en: Activate Link
+  fr: Activer le Lien
+
+disable-link:
+  en: Delete Link
+  fr: Supprimer le Lien
+
+unspecified:
+  en: Unspecified
+  fr: Non spécifié
+
+service-link:
+  en: Service
+  fr: Service
+
+standard-link:
+  en: Standards and Targets
+  fr: Normes de service et cibles
+
+other-link:
+  en: Other
+  fr: Autre
+
+link-ctgry-desc:
+  en: Identify the category of the departmental Webpage as either "Service", "Standards and Targets", or "Real-Time Performance Results".
+  fr: Précisez la catégorie de la page Web du ministère en que « Service », « Normes de service et cibles » ou « Résultats du rendement en temps réel ».
+
+preview:
+  en: Preview
+  fr: Aperçu
+
+link-disabled-success:
+  en: Link successfully deleted
+  fr: Le lien a été supprimé avec succès
+
+digital-enablement-ht:
+  en: You must select a status for each of the 6 interaction points.
+  fr: Vous devez sélectionner un statut pour chacun des six points d'interaction.
+
+deactivate-page:
+  en: Retire
+  fr: Retirer
+
+deactivate-item:
+  en: Retire
+  fr: Retirer
+
+disable-page:
+  en: Delete
+  fr: Supprimer
+
+disable-item:
+  en: Delete
+  fr: Supprimer
+
+digital-enablement-comment-ht:
+  en: Required if any interaction point (above) is 'Not applicable'.
+  fr: Requis si aucun des points d'interaction (ci-dessus) sont « sans objet ».
+ 
+service-detail-page:
+  en: Back to Service Detail Page
+  fr: Retour à la page avec les détails sur le service
+
+real-time-performance:
+  en: Real-time Performance Results
+  fr: Résultats du rendement en temps réel
+
+standard-report-comment-en:
+  en: Comments (English)
+  fr: Commentaires (anglais)
+
+standard-report-comment-fr:
+  en: Comments (French)
+  fr: Commentaires (français)
+
+
+standard-report-comment-desc:
+  en: Required if the Target Type is "Other Target Type" to explain why the Target is not a "Percentage of Outcomes".
+  fr: Requis si le type de la cible est « Autre type de cible » pour expliquer pourquoi cela n'est pas un « pourcentage des résultats »
+
+list-services:
+  en: Services list
+  fr: Liste des services
+
+number-volume-ht:
+  en: Enter only numbers (no comma or space or text)
+  fr: Inclure seulement des chiffres (pas de virgule ou d'espace ou de texte)
+
+other-application-count:
+  en: Number of Applications Through Other Channels (i.e. Email, Fax)
+  fr: Nombre de demandes soumises par l'entremise d'un autre mode de prestation (c.-à-d. courriel ou fax)
+
+other-application-count-desc:
+  md: true
+  en: >-
+   Identifies the number of applications submitted through other service delivery channels (i.e. email, fax) in the fiscal year for the service. 
+   
+   * If the service is not offered through other service delivery channels, please leave the cell empty and provide a rationale in the English and French comment boxes. 
+   
+   * If the data is not available, please leave the cell empty and provide a rationale in the English and French comment boxes. 
+
+  fr: >-
+   Indiquez le nombre de demandes soumises par d'autres modes de prestation (c.-à-d. courriel ou fax) au cours de l'exercice financier pour le service. 
+   
+   * Si le service n'est pas offert par d'autre modes de prestations, veuillez laisser la cellule vide et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+   
+   * Si les données ne sont pas disponibles, veuillez laisser la cellule vide et fournissez une justification en anglais et en français dans les boîtes de commentaires.
+
+
+Search_Service:
+  en: Search GC Service inventory
+  fr: Chercher le répertoire de services du GC
+
+instructions_services_search:
+  en: Search for existing services and service standards using keywords.
+  fr: Chercher des services et des normes de service en utilisant des mots clés.
+
+service_detail_page_instructions:
+ md: true
+ en: >-
+  Find all the details related to the Service and links to Complete or Edit the required information for :  
+    
+  * Volume received by delivery channels in a given year
+  
+  * Web Links associated to the Service and Service Standards 
+  
+  * Service Standards and their Performance Targets and Annual Business Volumes
+
+  To add a new Service in your Service Inventory, return to the Home page.   
+ fr: >-
+  Trouver toutes l'information relative à un service et les liens pour compléter ou modifier les informations requises incluant : 
+  
+  * Les volumes reçus par mode de prestation pour une année donnée
+  
+  * Les liens Web lié au service et aux normes de services 
+  
+  * Les normes de service, leurs cibles de rendement et les volumes opérationels annuels.
+
+  Pour ajouter un service à votre répertoire de services, veuillez retourner à la page d'accueil.  
+
+service_inventory_app_instructions:
+ md: true
+ en: >-
+  **Only UNCLASSIFIED information can be entered in the application.** Departments are responsible for ensuring all information entered is ready to be reported publicly prior to making any changes in the tool. 
+
+  * **Add a new Service** or Edit an existing Service in your Service Inventory.
+
+  * Create a Report in **HTML** of your Service Inventory.
+  
+  * See all the changes made in the application in the **Changelog**. 
+
+  * **Search** for Services and Service Standards using keywords.
+  
+ fr: >-
+  ** Seuls les renseignements NON CLASSIFIÉS peuvent être consignés dans l'application**. Il incombe aux ministères de veillez à ce que tous les renseignements saisis sont prêts à être rendus publics avant d'apporter des changements à l'outil. 
+ 
+  * **Ajouter un nouveau service** ou modifier un service existant dans votre répertoire de services.
+ 
+  * Créez un rapport **HTML** de votre répertoire de service.
+  
+  * Afficher un **Journal des changements** apportées à votre structure redditionnelle dans l'application.
+
+  * **Chercher** pour un service ou une norme de service en utilisant des mots clés.
+
+download_service_data:
+  en: Download Services Data
+  fr: Télécharger les données sur les services
+
+account-enable:
+  en: Online Services - Account Registration and Enrolment
+  fr: Services en ligne - Enregistrement de compte et l’inscription
+
+account-enable-desc:
+  md: true 
+  en: >-
+    Was this client interaction point enabled? If it is "Not Applicable", please provide an explanation in the Comment box "Comments related to e-enabled Services - Client Interaction points". 
+
+    Account registration and enrolment - For example, a client would register for a personalized account/ enrol. 
+  fr: >-
+    Est-ce que le point d’interaction avec le client était activé? S’il était « Sans objet », veuillez fournir une explication dans la boîte de commentaires « Commentaires lié aux services électroniques - Points d'interaction liés aux clients ».
+
+    Enregistrement de compte et l’inscription - Par exemple, un client s’enregistre pour obtenir un compte personnel ou s’inscrit. 
+auth-enable:
+  en: Online Services - Authentication
+  fr: Services en ligne - Authentification
+
+auth-enable-desc:
+  md: true 
+  en: >-
+    Was this client interaction point enabled? If it is "Not Applicable", please provide an explanation in the Comment box "Comments related to e-enabled Services - Client Interaction points". 
+
+    Authentication - For example, a client would establish credentials and authenticate using the Credential Broker Service or GCKey. 
+  fr: >-
+    Est-ce que le point d’interaction avec le client était activé? S’il était « Sans objet », veuillez fournir une explication dans la boîte de commentaires « Commentaires lié aux services électroniques - Points d'interaction liés aux clients ».
+
+    Authentification - Par exemple, un client créé les justificatifs d’identité et procède à l’authentification au moyen du service de courtier de justificatifs d’identité ou de cléGC.
+
+
+application-enable:
+  en: Online Services - Application
+  fr: Services en ligne - Demande
+
+application-enable-desc:
+  md: true 
+  en: >-
+    Was this client interaction point enabled? If it is "Not Applicable", please provide an explanation in the Comment box "Comments related to e-enabled Services - Client Interaction points". 
+
+    Application - For example, a client would complete and send an application, receive confirmation of application receipt/status or make a payment. 
+  fr: >-
+    Est-ce que le point d’interaction avec le client était activé? S’il était « Sans objet », veuillez fournir une explication dans la boîte de commentaires « Commentaires lié aux services électroniques - Points d'interaction liés aux clients ».
+
+    Demande - Par exemple, un client remplit et envoie une demande, reçoit la confirmation de la réception de la demande/l’état ou effectue un paiement. 
+
+decision-enable:
+  en: Online Services - Decision
+  fr: Services en ligne - Décision
+
+decision-enable-desc:
+  md: true 
+  en: >-
+    Was this client interaction point enabled? If it is "Not Applicable", please provide an explanation in the Comment box "Comments related to e-enabled Services - Client Interaction points". 
+
+    Decision - For example, the client would be notified of a decision or status. 
+  fr: >-
+    Est-ce que le point d’interaction avec le client était activé? S’il était « Sans objet », veuillez fournir une explication dans la boîte de commentaires « Commentaires lié aux services électroniques - Points d'interaction liés aux clients ».
+
+    Décision - Par exemple, le client est avisé d’une décision ou de l’état. 
+issuance-enable:
+  en: Online Services - Issuance
+  fr: Services en ligne - Délivrance
+
+issuance-enable-desc:
+  md: true 
+  en: >-
+    Was this client interaction point enabled? If it is "Not Applicable", please provide an explanation in the Comment box "Comments related to e-enabled Services - Client Interaction points". 
+
+    Issuance (final output) - For example, the client would receive a payment, authorization, permit, licence, certification and consultation. 
+  fr: >
+    Est-ce que le point d’interaction avec le client était activé? S’il était « Sans objet », veuillez fournir une explication dans la boîte de commentaires « Commentaires lié aux services électroniques - Points d'interaction liés aux clients ».
+    Délivrance - Par exemple, le client reçoit un paiement, une autorisation, un permis, une licence, une certification ou une consultation. 
+
+issue-res-enable:
+  en: Online Services - Issue Resolution and Feedback
+  fr: Services en ligne - Résolution de problèmes et la rétroaction
+
+issue-res-enable-desc:
+  md: true 
+  en: >-
+    Was this client interaction point enabled? If it is "Not Applicable", please provide an explanation in the Comment box "Comments related to e-enabled Services - Client Interaction points". 
+  fr: >-
+    Est-ce que le point d’interaction avec le client était activé? S’il était « Sans objet », veuillez fournir une explication dans la boîte de commentaires « Commentaires lié aux services électroniques - Points d'interaction liés aux clients ».
+
+link_page_instructions:
+  en: Add or Edit links related to the Service or Service Standard.
+  fr: Ajouter ou modifier des liens reliés au service ou à la norme de service. 
+
+
+gba-null-choice:
+  en: No GBA+ since 2014-15
+  fr: Aucun ACS+ depuis 2014-2015
+
+standard-missing-rprt-header:
+  en: Standards without a report
+  fr: Normes sans rapport annuel
+
+service-missing-rprt-header:
+  en: Services without a report
+  fr: Services sans rapport annuel
+
+service-overloaded-pseudo-key-header:
+  en: Service level consistency issues
+  fr: Services avec des noms identiques
+
+standard-overloaded-pseudo-key-header:
+  en: Standard level consistency issues
+  fr: Normes avec des noms identiques
+
+service-missing-standard-header:
+  en: Services without a standard
+  fr: Services sans norme
+
+save_and_create_another_link:
+  en: Save and create another URL
+  fr: Sauvegarder et créer un autre URL
+
+save_and_create_another_service:
+  en: Save and create another service
+  fr: Sauvegarder et créer un autre service
+
+save_and_edit_service_report:
+  en: Save and fill out annual report
+  fr: Sauvegarder le service et remplir son rapport annuel
+
+no_structural_issues:
+  en: There are no structural issues. Congratulations!
+  fr: Il n'a aucun enjeu structurel, félicitations! 
+
+save_and_create_another_standard:
+  en: Save and create another standard for this service
+  fr: Enregistrer et créer une autre norme pour ce service
+    
+save_and_edit_standard_report:
+  en: Save and fill out annual report
+  fr: Sauvegarder le service et remplir son rapport annuel
+
+add_depts:
+  en: Add departments
+  fr: Ajouter des départements
+
+scope_name_en:
+  en: Service scope (English)
+  fr: Portée du service (anglais)
+
+scope_name_fr:
+  en: Service scope (French)
+  fr: Portée du service (français)
+
+service_type_name_en:
+  en: Service type (English)
+  fr: Type de service (anglais)
+
+service_type_name_fr:
+  en: Service type (French)
+  fr: Type de service (français)
+
+designation_en:
+  en: Designations (English)
+  fr: Désignations (anglais)
+
+designation_fr:
+  en: Designations (French)
+  fr: Désignations (français)
+
+channel_en:
+  en: Channel (English)
+  fr: Canal (anglais)
+
+channel_fr:
+  en: Channel (French)
+  fr: Canal (français)
+
+required-actions:
+  en: Required Actions
+  fr: Actions Requises
+
+missing-link:
+  en: >-
+    The service "%(service_name)s" Does not have an associated URL (with category 'Service'). Please <a href="%(href)s"> create one </a>.
+  fr: >-
+    Le service « %(service_name)s » n'a pas d'URL associé (avec une catégorie «Service»). Veuillez <a href="%(href)s"> n'en créer </a>.
+      
+missing-link-header:
+  en: Services without a 'Service' URL
+  fr: Services qui manquent un « URL de Service »
+
+service-count:
+  en: Service Count
+  fr: Nombre de services
+
+service-channels:
+  en: Channel(s) through which the service is offered
+  fr: Mode(s) de prestation par lesquels le service est offert
+
+service-channels-desc:
+  md: true
+  en: >-
+    Identify all applicable channels that are used in the delivery of the service (Select all that apply). Note: Based on the answer to the above, departments will be able to enter business volumes for only the channels that are applicable to the service (in the Report by delivery channel). Similarly, departments will only be able to select one of those applicable channels when entering service standards. 
+  fr: >-
+    Identifiez toutes les modes de prestation applicables qui sont utilisés dans la prestation du service (sélectionnez toutes les réponses qui s’appliquent). Remarque : En fonction de la réponse à la question ci-dessus, les ministères pourront entrer les volumes d’activités seulement pour les modes de prestation qui s’appliquent au service (dans le Rapport par mode de prestation). De même, les ministères ne pourront sélectionner qu’un seul de ces modes de prestation applicables lorsqu’ils entreront les normes relatives aux services.
+
+info-service:
+  en: This is an information service
+  fr: Il s’agit d’un service d’information
+
+info-service-desc:
+  en: Information is a service when it constitutes a final output that addresses one or more needs of an intended recipient and contributes to the achievement of an outcome (e.g. Weather forecast, Border Information Service, Labour Market Information). Please refer to the Appendix B of the <a href="https://gccollab.ca/file/view/5092896/enguideline-on-service-and-digital-version-11frligne-directrice-sur-les-services-et-le-numu00e9rique-version-11-en-anglais">Guideline on Service and Digital</a> for more details on the definition. 
+  fr: L’information est un service lorsqu’elle constitue un extrant final qui répond à un ou plusieurs besoins d’un bénéficiaire visé et contribue à l’atteinte d’un résultat (p. ex., prévisions météorologiques, Service d’information sur la frontière, Information sur le marché du travail). Veuillez consulter l’annexe B de la <a href="https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11">Ligne directrice sur les services et le numérique</a> pour obtenir de plus amples détails sur la définition.
+
+info-service-help-text:
+  en: Scroll down to bottom for description of an information service.
+  fr: Faites défiler la page vers le bas pour obtenir la description d’un service d’information.
+    
+std-channel-issue:
+  md: true
+  en: >-
+    The service standard "%(std_name)s" has been created for the "%(std_channel)s" channel but this channel was not selected on the service. Please <a href="%(service_url)s">add this channel to the service</a> or <a href="%(std_url)s">delete the standard</a>.
+  fr: >-
+    La norme de service "%(std_name)s" a été créée pour le mode de prestation "%(std_channel)s" mais le mode de prestation n’a pas été sélectionné comme étant applicable au service. Veuillez <a href="%(service_url)s">ajouter ce mode au service</a> ou <a href="%(std_url)s">supprimer la norme</a>.
+    
+std-channel-issue-header:
+  en: Invalid channel selection
+  fr: Sélection de mode invalide
+
+is-atip-service:
+  en: Is an ATIP service
+  fr: C’est un service d’AIPRP
+
+required-for-info-services-error:
+  en: This field is required for information services.
+  fr: Ce champ est obligatoire pour les services d'information.
+
+service-channel-and-application-issue:
+  en: The service "%(service)s" has applications reported for a channel that was not selected on the service. Please <a href="%(service_url)s">add the channel to the service</a> or <a href="%(svc_report_url)s">remove the values from the applications field(s)</a>.
+  fr: Le service "%(service)s" a des demandes pour lesquelles le mode de prestation de service n'a pas été sélectionné. Veuillez <a href="%(service_url)s">ajouter le mode de prestation au service</a> ou <a href="%(svc_report_url)s">supprimer les valeurs des champs d'applications</a>.
+
+service-channel-and-application-issue-header:
+  en: Applications reported for unsupported channels
+  fr: Demandes indiquant des modes de prestation de service non pris en charge
+
+service-channel-but-no-volumes:
+  en: You have selected one or more channels on the service <a href="%(service_url)s">"%(service)s"</a> but have not reported the number of applications received. Please fill out the <a href="%(svc_report_url)s">service report</a> to indicate how many applications were received.
+  fr: Vous avez sélectionné un ou plusieurs modes de prestation pour ce service <a href="%(service_url)s">"%(service)s"</a> mais n'avez pas indiqué le nombre de demandes reçues. Veuillez remplir le <a href="%(svc_report_url)s">rapport de service</a> en inscrivant le nombre de demandes reçues.
+
+service-channel-but-no-volumes-header:
+  en: No applications reported for service channel
+  fr: Aucune demande n’indique le mode de prestation de service
+
+rprt-channel-consistency-issue:
+  en: >-
+    The service <a href="%(svc_url)s">%(svc_name)s</a> has the following mismatched channel problems. Either 1) a channel was selected on the service but the associated number of applications received were not reported or 2) the number of applications received were reported but the corresponding channel was not selected on the service.
+  fr: >-
+    Le service <a href="%(svc_url)s">%(svc_name)s</a> éprouve les problèmes suivants découlant d’un mauvais appariement des modes de prestation, à savoir 1) un mode de prestation de service est sélectionné, mais le nombre de demandes reçues correspondant n'est pas indiqué; 2) le nombre de demandes reçues est indiqué, mais le mode de prestation de service correspondant n'a pas été sélectionné.
+
+rprt-channel-consistency-issue-header:
+  en: Channel inconsistency between service and service report
+  fr: Discordance entre le mode de prestation sélectionné pour le service et celui figurant dans le rapport de service
+
+digital-identity:
+  en: Use of enterprise digital identity platforms
+  fr: Utilisation de plateformes organisationnelles d’identité numérique
+
+digital-identity-en:
+  en: Digital Identity Platforms (English)
+  fr: Plateformes d’identité numérique (anglais)
+
+digital-identity-fr:
+  en: Digital Identity Platforms (French)
+  fr: Plateformes d’identité numérique (français)
+
+digital-identity-desc:
+  en: Identifies the use of TBS mandated enterprise digital identity platforms for identity, credential and access management, where applicable. Please refer to Section 4.1.9 of the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16577">Directive on Identity Management</a> and Section 3.6 of the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26262#sec3.6">Guideline on Defining Authentication Requirements</a> for more details.
+  fr: Ce champ indique l’utilisation de plateformes organisationnelles d’identité numérique exigées par le SCT pour la gestion de l’identité, des justificatifs et de l’accès, s’il y a lieu. Veuillez vous reporter à l’article 4.1.9 de la <a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=16577">Directive sur la gestion de l’identité</a> et l’article 3.6 de la <a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=26262#sec3.6">Ligne directrice sur la définition des exigences en matière d’authentification</a> pour de plus amples renseignements.
+
+digital-identity-comment:
+  en: Comments related to use of enterprise digital identity platforms
+  fr: Commentaires sur l’utilisation de plateformes organisationnelles d’identité numérique
+
+digital-identity-comment-ht:
+  en: Required if "Other" is selected on the digital identity field.
+  fr: Obligatoire lorsque « Autre » est sélectionné dans le champ d'identité numérique.
+
+digital-identity-comment-desc:
+  en: Describe what platform is used to perform digital identity validation and/or user authentication if not using one of the mandated platforms.
+  fr: Ce champ décrit la plateforme utilisée pour effectuer la validation de l’identité numérique ou l’authentification des utilisateurs si vous n’utilisez pas l’une des plateformes exigées.
+
+digital-identity-comment-error:
+  en: Comments are required when the digital identity platform selected is "Other". 
+  fr: Des explications sont requises lorsque la plateforme d'identité numérique sélectionnée est « Autre ».
+
+new-field-badge:
+  en: New
+  fr: Nouveau
+
+channel:
+  en: Channel
+  fr: Mode de prestation
+
+on-service:
+  en: On Service
+  fr: Service
+
+on-service-report:
+  en: On Service Report
+  fr: Rapport de service
+
+info-service-volume-issue:
+  en: You have unreported website visits and telephone enquiries for the <a href="%(svc_url)s">%(svc_name)s</a> service. Please fill them out on the <a href="%(svc_report_url)s">service report</a>.
+  fr: Certaines de vos visites sur le site web et de vos demandes de renseignements téléphoniques concernant le service <a href="%(svc_url)s">%(svc_name)s</a> ne sont pas indiquées. Veuillez les inscrire dans le rapport de service <a href="%(svc_report_url)s">service </a>.
+
+info-service-volume-issue-header:
+  en: Unreported website visits and telephone enquiries for information services
+  fr: Visites de sites web et demandes de renseignements téléphoniques non signalées pour les services d'information
+
+not-selected:
+  en: Not selected
+  fr: Non sélectionné
+
+submit-to-tbs:
+  en: Submit to TBS
+  fr: Soumettre au SCT
+  
+service_inventory_closed_for_edits:
+  en: The 2018-19 service inventory is now closed. You may view your service inventory but cannot make any modifications.
+  fr: Le Répertoire de services 2018-19 est maintenant fermé. Vous pouvez consulter votre répertoire de services, mais ne pouvez apporter aucune modification.
+
+digital_enablement_group_title:
+  en: Digital Interaction Points
+  fr: Points d'interaction en ligne
+
+digital_enablement_comments_group_title:
+  en: Comments on Digital Interaction Points
+  fr: Commentaires sur les points d'interaction en ligne
+
+digital_identity_group_title:
+  en: Digital Identity Platforms
+  fr: plateformes organisationnelles d’identité en ligne
+
+tagging_group_title:
+  en: Tagging
+  fr: Étiquetage
