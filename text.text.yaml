@@ -91,15 +91,18 @@ scope_description:
   md: true
 
   en: >-
-   Identify the service as an external service, internal enterprise service, and/or internal service. Select all that apply. For more information, please refer to the [Guideline on Service and Digital](https://gccollab.ca/file/view/5092896/enguideline-on-service-and-digital-version-11frligne-directrice-sur-les-services-et-le-numu00e9rique-version-11-en-anglais).
+   Identify the scope of the service as an external service, internal enterprise service, and/or internal service. Select all that apply. For more information, please refer to the [Guideline on Service and Digital](https://www.canada.ca/en/government/system/digital-government/guideline-service-digital.html#ToC8_3_1).
    
-   * An external service can be defined as a service where the intended recipient is external to the Government of Canada (GC). 
+   * An external service is a service where the intended recipient is external to the Government of Canada (GC). 
    
-   * An internal enterprise service can be defined as a service provided by a GC department to other GC departments on a government-wide basis (they may be provided to several or all departments). 
+   * An internal enterprise service is a service provided or made available to other GC departments on a government-wide basis (they may be provided to several or all departments). 
+
+   * Cluster services involve two or more departments in the delivery of a service, such as service agreements between departments and their portfolio organizations or service agreements between two or more departments
    
-   * Internal enterprise services are distinct from internal services, which are provided within a department.
+   * Internal services are administered by a department to support its other programs and corporate obligations, regardless of where they are delivered in the department.
+
   fr: >-
-   Précisez que le service est un service externe ou un service interne intégré et/ou un service interne. Sélectionnez tout ce qui s'y rapporte. Pour obtenir de plus amples renseignements, veuillez vous référer à la [Ligne directrice sur les services et le numérique](https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11).
+   Précisez que le service est un service externe ou un service interne intégré et/ou un service interne. Sélectionnez tout ce qui s'y rapporte. Pour obtenir de plus amples renseignements, veuillez vous référer à la [Ligne directrice sur les services et le numérique](https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/ligne-directrice-services-numerique.html#ToC8_3_1).
    
    * Un service externe peut être défini comme un service dans le cadre duquel le bénéficiaire visé est à l’extérieur du gouvernement du Canada (GC). 
    
@@ -200,7 +203,7 @@ service-uses-cra-bus-num-ht:
   fr: Préciser si un numéro d'entreprise de l'ARC est nécessaire pour la prestation de ce service
 
 service-uses-sin-ht:
-  en: Indicate if a SIN number is required for the provision of this service
+  en: Indicate if a Social Insurance Number is required for the provision of this service
   fr: Préciser si un numéro d'assurance sociale est nécessaire pour la prestation de ce service
 
 service-fee-collected-ht:
@@ -219,26 +222,18 @@ service-feedback-channels-desc:
   en: Identifies which service delivery channels the department uses to collect feedback from clients. Feedback could be general, or specific to a service. Select all that apply.
   fr: Précise les canaux de prestation qu'utilise un ministère pour obtenir la rétroaction des clients. La rétroaction pourrait être générale ou propre à un service. Sélectionnez toutes les réponses qui s'appliquent.
 
-service-authorities-en-ht:
-  en: The instrument granting the authority for the service to be provisioned (English)
-  fr: L'instrument responsable d'accorder l'autorité nécessaire pour l'approvisionnement du service (anglais)
-
-service-authorities-fr-ht:
-  en: The instrument granting the authority for the service to be provisioned (French)
-  fr: L'instrument responsable d'accorder l'autorité nécessaire pour l'approvisionnement du service (français)
-
 service-digital-enablement-desc:
   md: true
   en: >-  
    Indicate whether a service is e-enabled on key interaction points, as applicable to the specific service. 
-   * If the interaction point is marked as 'Not applicable', please provide a rationale. 
    * If the interaction point is applicable to the service and is e-enabled, select 'yes'. 
-   * If the interaction point is applicable at the service, but is not currently e-enabled, select 'No'. 
+   * If the interaction point is applicable to the service, but is not currently e-enabled, select 'No'. 
+   * If the interaction point is 'Not applicable', please provide a rationale. 
   fr: >-  
    Préciser si un service est de nature électronique selon les principaux points d'interaction, tel qu'il s'applique à un service en particulier. 
-   * Si le point d'interaction est « sans objet », veuillez fournir une explication. 
    * Si le point s'applique au service et est de nature électronique, veillez sélectionner « Oui ». 
    * Si le point d'interaction s'applique au service, mais il n'est pas actuellement de nature électronique, veillez sélectionner « Non ». 
+   * Si le point d'interaction est « sans objet », veuillez fournir une explication. 
 
 service-programs-desc:
   en: The Program(s) under which the service is delivered.
@@ -255,13 +250,15 @@ service_desc_description:
 service_type_description:
  md: true
  en: >- 
-  Identifies the external, internal enterprise or internal service type, as outlined in the [Guideline on Service and Digital](https://gccollab.ca/file/view/5092896/enguideline-on-service-and-digital-version-11frligne-directrice-sur-les-services-et-le-numu00e9rique-version-11-en-anglais) and as prescribed in the [Policy on Results](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=31306) (for Internal Services). 
+  Broke, should explain CGM categories
  fr: >- 
   Précise le type de service externe, interne intégré ou interne, tel que défini dans la [Ligne directrice sur les services et le numérique](https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11).
 
 service_designation_description:
  md: true
  en: >-
+Change to Critical Services Category
+
   Whether the service has been identified as a priority service, a critical service and/or an essential service by the department. More than one designation can be listed. 
   
   
