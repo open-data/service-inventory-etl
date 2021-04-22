@@ -310,7 +310,7 @@ service_sin_description:
 
 service_fees_description:
   md: True
-  en: A yes/no value that indicates whether a user fee is collected for the service (for details, consult the [Service Fees Act](https://laws-lois.justice.gc.ca/eng/acts/S-8.4/)).
+  en: A yes value indicates that a user fee is collected for the service (for details, consult the [Service Fees Act](https://laws-lois.justice.gc.ca/eng/acts/S-8.4/)).
   fr: Une valeur oui/non indiquant si des frais sont perçus pour le service (pour obtenir des détails, consultez la _[Loi sur les frais de service](https://laws-lois.justice.gc.ca/fra/lois/S-8.4/)_).
 
 service-link-name-en:
@@ -372,11 +372,11 @@ link-display-name:
 link-value-desc:
   md: true
   en: >-
-   * If the "Service" category was chosen, identify the departmental Webpage where the service is described and/or can be initiated. 
+   * Service Links - The departmental webpage where the service is described and/or can be initiated. 
    
-   * If the "Standards and Targets" category was chosen, identify the departmental Webpage where the service standards and targets are published.
+   * Standards and Targets links - The departmental webpage where the service standards and targets are published.
    
-   * If the "Real-Time Performance Results" category was chosen, identify the departmental Webpage where real-time performance results for a service are published.
+   * Real-Time Performance Results Links - The departmental webpage where real-time performance results for a service are published.
   fr: >-
    * Si la catégorie « Service » a été sélectionnée, indiquez la page Web ministérielle où le service est décrit et où il peut-être entamé.
 
@@ -404,7 +404,7 @@ service-standard-desc:
   en: Some help text
   fr:
 
-standard-name-desc:
+standard-name-desc: 
   en: Identify the service standard related to a particular service. A service standard is a public commitment to a measurable level of performance that clients can expect under "normal circumstances" (expected level of demand for regular day-to-day service operations).
   fr: Indiquez la norme de service liée à un service en particulier. Une norme de service est un engagement public de fournir un niveau de rendement mesurable auquel peuvent s'attendre les clients dans des « circonstances normales » (niveau de demande prévu pour des activités quotidiennes de service régulière).
 
@@ -448,7 +448,7 @@ standard-target-desc:
     Identify the service standard target as a percentage. A service standard target is defined as the frequency (often expressed as a percentage) that the organization expects to meet the service standard. For example, we will meet our service standard 90%% of the time. 
     
     
-    For standards not of this form, choose "Other type of target", and there will be no targets or reporting associated with the standard. 
+    For standards that don't use frequency - for example, ratios - choose "Other type of target", you will be able to indicate whether or not the standard was met. 
     
     
     **Note that the target type cannot be changed.** If the wrong type was selected, you will need to "Delete" this Service Standard and create a new one with the correct target type.
@@ -562,14 +562,13 @@ mail-application-count:
 phone-inquiry-count-desc:
   md: true
   en: >-
-    Identifies the number of telephone calls received in the fiscal year for the service. 
+    Please enter the number of telephone calls received in the fiscal year for the service. 
 
-    * If the service is not provided through the particular channel, leave the number of applications as unspecified (i.e. blank) and provide a rationale in the English and French comment boxes.
+    * If it isn't possible to recieve calls for this service, please select "Not Applicable" in the drop down menu.
    
-    * If it is offered by the channel, but not tracked, enter zero. In both cases and provide a rationale in the English and French comment boxes.
+    * If this service receives telephone calls, but does not track them, enter zero.
    
-    * If it is offered by that channel, but did not receive any volumes, enter zero.
-
+    * If it is offered by that channel, but did not receive any volumes, please select "No Data" in the drop down menu.
 
   fr: >-
     Précisez le nombre d'appels téléphoniques reçus au cours de l'exercice financier pour le service. 
