@@ -118,6 +118,22 @@ designations:
   en: Special Designations
   fr: Désignations spéciales
 
+bia-year:
+  en: Last year of Business Impact Analysis review/completion
+  ##fr:
+
+security-categories:
+  en: Criticality Impact Security Categories
+  ##fr:
+
+downtime:
+  en: Maximum Allowable Downtime
+  ##fr:
+
+bcp-year:
+  en: Last year of Business Continuity Plan review/completion
+  ##fr:
+
 target-groups:
   en: Clients/Target Groups
   fr: Clients/Groupes cibles
@@ -257,7 +273,7 @@ service_type_description:
 service_designation_description:
  md: true
  en: >-
-Change to Critical Services Category
+###Change to Critical Services Category
 
   Whether the service has been identified as a priority service, a critical service and/or an essential service by the department. More than one designation can be listed. 
   
@@ -286,6 +302,37 @@ Change to Critical Services Category
 
 
   Pour obtenir de plus amples renseignements veuillez consulter la [Ligne directrice sur les services et le numérique](https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11).
+
+bia-year-desc:
+  en: Indicate the most recent year a Business Impact Analysis was reviewed or completed for this service
+  ##fr:
+
+security-categories-desc:
+  en: Indicate the Criticality Impact for the five Security Categories. Any category with a result of "High" or "Very High" means the service is considered Critical.
+  
+  ##fr:
+
+downtime-desc:
+  en: >- 
+  If this service is considered critical, indicate the maximum allowable downtime for this service. 
+    
+  * If the service is critical, but the maximum allowable downtime has not been assessed, select "Not assessed"
+
+  * If the service is not critical, and the maximum allowable downtime has not been assessed, select "Not Applicable"
+
+fr: >-
+#####
+
+bcp-year-desc:
+  en: >- 
+  If this service is considered critical, indicate the most recent year in which the Business Continuity Plan was reviewed or completed. 
+  
+  * If the service is critical, but no BCP has been completed, select "No BCP"
+
+  * If the service is not critical, and a BCP has not been completed, select "Not Applicable"
+
+  ##fr:
+
 
 service_target_group_description:
  md: true
@@ -518,6 +565,20 @@ bernoulli-form-upper-label:
   fr: Limite supérieure de la cible
 
 ### Service Reports ###
+service-review:
+  en: Year of last service review
+  ##fr: 
+
+### Service Improvement ###
+service-improvement:
+  en: Year of last service improvement based on client feedback
+  ##fr: 
+
+### Assessment of Accessibility ###
+accessibility:
+  en: How is the service assessed for accessibility?
+  ##fr: 
+
 
 count_number:
   en: Only include numbers
@@ -558,6 +619,25 @@ live-application-count:
 mail-application-count:
   en: Number of Applications by Mail
   fr: Nombre de candidatures par courrier
+
+service-review-desc:
+  en: Please select the most recent year in which this service was reviewed. This question is required for services which have over 40,000 total applications (these are considered high volume services)
+  ##fr:
+
+service-improvement-desc:
+  en: Please select the most recent year in which the service was improved based on client feedback.
+  ##fr: 
+
+accessibility-desc:
+  en: >-
+  Please indicate which type of assessement has been completed on the web presence for this service, select as many as applicable. 
+
+  * If accessiblity has not been assessed, please select "Not Assessed"
+
+  * If you have no data on this assessment, please select "Not Applicable"
+
+##fr: >-
+
 
 phone-inquiry-count-desc:
   md: true
