@@ -87,6 +87,10 @@ scope:
   en: Service Scope
   fr: Portée du service 
 
+service-recipient:
+  en: Service Recipient Type
+  ##fr: 
+
 scope_description:
   md: true
 
@@ -262,6 +266,16 @@ service_name_description:
 service_desc_description:
   en: A brief (one or two sentences) description of the service, and the need it meets.
   fr: Une brève description (en une ou deux phrases) du service et du besoin auquel il répond.
+
+service-recipient-desc:
+  en: >- 
+  Select the type of recipient to which this Service is directed. Please try to select only one option.
+
+  * Targeted, Client-based services are directed at discrete clients
+
+  * Untargeted, Societal-based services have no direct clients, but instead broadly support society, such as weather reports, jails or search and rescue.
+
+##fr: 
 
 service_type_description:
  md: true
