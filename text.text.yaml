@@ -280,9 +280,13 @@ service-recipient-desc:
 service_type_description:
  md: true
  en: >- 
-  Broke, should explain CGM categories
- fr: >- 
-  Précise le type de service externe, interne intégré ou interne, tel que défini dans la [Ligne directrice sur les services et le numérique](https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11).
+  Service types were changed to align with a standard GC model. 
+  
+  * There are eight external service types: 1) Resources; 2) Care, Education, Regulation, Culture; 3) Information; 4) Inspections, Permissions, Agreements, Rulings; 5) Penalties, Protections, Interventions; 6) Legisation, Regulation, Policy; 7) High Volume Regulatory Transactions; 8) Grants and Contributions.
+
+  * There are ten internal service types: 1) Acquisition; 2) Communications; 3) Financial Management; 4) Human Resources; 5) Information Management; 6) Information Technology; 7) Legal Services; 8) Management and Oversight; 9) Materiel; 10) Real Property. 
+ #fr: >- 
+  #Précise le type de service externe, interne intégré ou interne, tel que défini dans la [Ligne directrice sur les services et le numérique](https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11).
 
 service_designation_description:
  md: true
@@ -1757,17 +1761,17 @@ service-channels-desc:
   fr: >-
     Identifiez toutes les modes de prestation applicables qui sont utilisés dans la prestation du service (sélectionnez toutes les réponses qui s’appliquent). Remarque : En fonction de la réponse à la question ci-dessus, les ministères pourront entrer les volumes d’activités seulement pour les modes de prestation qui s’appliquent au service (dans le Rapport par mode de prestation). De même, les ministères ne pourront sélectionner qu’un seul de ces modes de prestation applicables lorsqu’ils entreront les normes relatives aux services.
 
-info-service:
-  en: This is an information service
-  fr: Il s’agit d’un service d’information
+###info-service:
+  #en: This is an information service
+  #fr: Il s’agit d’un service d’information
 
-info-service-desc:
-  en: Information is a service when it constitutes a final output that addresses one or more needs of an intended recipient and contributes to the achievement of an outcome (e.g. Weather forecast, Border Information Service, Labour Market Information). Please refer to the Appendix B of the <a href="https://gccollab.ca/file/view/5092896/enguideline-on-service-and-digital-version-11frligne-directrice-sur-les-services-et-le-numu00e9rique-version-11-en-anglais">Guideline on Service and Digital</a> for more details on the definition. 
-  fr: L’information est un service lorsqu’elle constitue un extrant final qui répond à un ou plusieurs besoins d’un bénéficiaire visé et contribue à l’atteinte d’un résultat (p. ex., prévisions météorologiques, Service d’information sur la frontière, Information sur le marché du travail). Veuillez consulter l’annexe B de la <a href="https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11">Ligne directrice sur les services et le numérique</a> pour obtenir de plus amples détails sur la définition.
+###info-service-desc:
+  #en: Information is a service when it constitutes a final output that addresses one or more needs of an intended recipient and contributes to the achievement of an outcome (e.g. Weather forecast, Border Information Service, Labour Market Information). Please refer to the Appendix B of the <a href="https://gccollab.ca/file/view/5092896/enguideline-on-service-and-digital-version-11frligne-directrice-sur-les-services-et-le-numu00e9rique-version-11-en-anglais">Guideline on Service and Digital</a> for more details on the definition. 
+  #fr: L’information est un service lorsqu’elle constitue un extrant final qui répond à un ou plusieurs besoins d’un bénéficiaire visé et contribue à l’atteinte d’un résultat (p. ex., prévisions météorologiques, Service d’information sur la frontière, Information sur le marché du travail). Veuillez consulter l’annexe B de la <a href="https://gccollab.ca/file/view/5092916/enguideline-on-service-and-digital-version-11-in-frenchfrligne-directrice-sur-les-services-et-le-numu00e9rique-version-11">Ligne directrice sur les services et le numérique</a> pour obtenir de plus amples détails sur la définition.
 
-info-service-help-text:
-  en: Scroll down to bottom for description of an information service.
-  fr: Faites défiler la page vers le bas pour obtenir la description d’un service d’information.
+###info-service-help-text:
+  #en: Scroll down to bottom for description of an information service.
+  #fr: Faites défiler la page vers le bas pour obtenir la description d’un service d’information.
     
 std-channel-issue:
   md: true
@@ -1784,9 +1788,9 @@ is-atip-service:
   en: Is an ATIP service
   fr: C’est un service d’AIPRP
 
-required-for-info-services-error:
-  en: This field is required for information services.
-  fr: Ce champ est obligatoire pour les services d'information.
+###required-for-info-services-error:
+  #en: This field is required for information services.
+  #fr: Ce champ est obligatoire pour les services d'information.
 
 service-channel-and-application-issue:
   en: The service "%(service)s" has applications reported for a channel that was not selected on the service. Please <a href="%(service_url)s">add the channel to the service</a> or <a href="%(svc_report_url)s">remove the values from the applications field(s)</a>.
