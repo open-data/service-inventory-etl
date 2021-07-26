@@ -266,7 +266,7 @@ def run_services_transformation(extract_file, output_path, output_file):
     select_columns.append('e_authentication')
 
     # Create e_application column
-    df_services['e_application'] = df_services['Online Authentication'].apply(lambda x: process_lookup_map(x, yesno_field_lookup, 'NA'))
+    df_services['e_application'] = df_services['Online Application'].apply(lambda x: process_lookup_map(x, yesno_field_lookup, 'NA'))
     select_columns.append('e_application')
 
     # Create e_decision column
