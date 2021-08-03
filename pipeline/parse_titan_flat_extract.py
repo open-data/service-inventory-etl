@@ -65,7 +65,7 @@ def process_num_or_ND(count):
 
 def process_performance_calculation(total_volume, volume_meeting_target):
     try:
-        return round((volume_meeting_target / total_volume)*100,2)
+        return round((volume_meeting_target / total_volume)*100,0)
     except:
         return 'ND'
 
