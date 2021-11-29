@@ -1,0 +1,1348 @@
+{
+  "dataset_type": "service",
+  "title": {
+    "en": "Service Inventory",
+    "fr": "Répertoire de services"
+  },
+  "notes": {
+    "en": "Access the Service Inventory of external and internal enterprise services for the Government of Canada",
+    "fr": "Accèder le catalogue des service internes intégrés et externes pour le Gouvernment du Canada"
+  },
+  "resources": [
+    {
+      "resource_name": "service",
+      "title": {
+        "en": "Service Identification Information & Metrics",
+        "fr": "Renseignements sur l’identification des services, données volumétrique"
+      },
+      "primary_key": [
+        "fiscal_yr",
+        "service_id"
+      ],
+      "fields": [
+        {
+          "id": "fiscal_yr",
+          "label": {
+            "fr": "Année financière",
+            "en": "Fiscal Year"
+          },
+          "description": {
+            "fr": "Indique l’exercice pour lequel les données sur les services sont déclarées.",
+            "en": "Identifies the fiscal year for which service data is reported"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "2013-2014": "2013-2014",
+            "2014-2015": "2014-2015",
+            "2015-2016": "2015-2016",
+            "2016-2017": "2016-2017",
+            "2017-2018": "2017-2018",
+            "2018-2019": "2018-2019",
+            "2019-2020": "2019-2020",
+            "2020-2021": "2020-2021",
+            "2021-2022": "2021-2022"
+          }
+        },
+        {
+          "id": "service_id",
+          "label": {
+            "fr": "Numéro d'identification du service",
+            "en": "Service ID Number"
+          },
+          "description": {
+            "fr": "Le numéro unique attribué à un service dans le répertoire afin de faciliter le référencement à des services précis.",
+            "en": "The unique number assigned to a service in the inventory to make it easier to refer to specific services."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_name_en",
+          "label": {
+            "fr": "Nom du service (en anglais)",
+            "en": "Service Name (English)"
+          },
+          "description": {
+            "fr": "Indique le nom officiel du service.",
+            "en": "Identifies the official name of the service."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_name_fr",
+          "label": {
+            "fr": "Nom du service (en français)",
+            "en": "Service Name (French)"
+          },
+          "description": {
+            "fr": "Indique le nom officiel du service.",
+            "en": "Identifies the official name of the service."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "department_name_en",
+          "label": {
+            "en": "Department Name (English)",
+            "fr": "Nom du ministère (en anglais)"
+          },
+          "description": {
+            "en": "Identifies the applied title of the department or agency.",
+            "fr": "Identifie le titre d’usage du ministère ou de l’organisme"
+          },
+         "datastore_type": "text"
+        },
+        {
+          "id": "department_name_fr",
+          "label": {
+            "en": "Department Name (French)",
+            "fr": "Nom de ministère (en français)"
+          },
+          "description": {
+            "en": "Identifies the applied title of the department or agency.",
+            "fr": "Identifie le titre d’usage du ministère ou de l’organisme"
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "external_internal",
+          "label": {
+            "fr": "Service externe ou service intégré interne",
+            "en": "External Service or Internal Enterprise Service"
+          },
+          "description": {
+            "fr": "Identifie le service en tant que service externe ou service interne intégré au sens des définitions données dans la Politique sur les services.",
+            "en": "Identifies the service as either an external service or internal enterprise service, as defined in the Policy on Service."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "intern": {
+              "en": "Internal Service",
+              "fr": "Service interne"
+            },
+            "extern": {
+            "en": "External Service",
+            "fr": "Service externe"
+            },
+            "enterprise": {
+              "en": "Internal Enterprise Service",
+              "fr": "Service interne intégré"
+            }
+          }
+        },
+        {
+          "id": "service_type",
+          "label": {
+            "fr": "Type de service",
+            "en": "Service Type"
+          },
+          "description": {
+            "fr": "Indique le type de service externe ou interne comme souligné par la Ligne directrice sur la gestion des services.",
+            "en": "Identifies the external or internal service type as outlined in the Guideline on Service Management."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "acq": {
+            "en": "Acquisition Services",
+            "fr": "Services d’acquisition"
+            },
+          "adv":{
+            "en": "Advisory Services",
+            "fr": "Services consultatifs"
+            },
+          "comm":{
+            "en": "Communications Services",
+            "fr": "Services de communication"
+            },
+          "ecu": {
+            "en": "Educational, Recreational and Cultural Encounters",
+            "fr": "Rencontres axées sur des activités éducatives, récréatives et culturelles"
+            },
+          "fm":{
+            "en": "Financial Management Services",
+            "fr": "Services de gestion financière"
+            },     
+          "gnc":{
+            "en": "Grants and Contributions",
+            "fr": "Subventions et contributions"
+            },      
+          "hr":{
+            "en": "Human Resources Management Services",
+            "fr": "Services de gestion des ressources humaines"
+            },
+          "reg_vol":{
+            "en": "High Volume Regulatory Transaction",
+            "fr": "Opérations réglementaires à demande élevée"
+            },
+          "im":{
+            "en": "Information Management Services",
+            "fr": "Services de gestion de l’information"
+            },
+          "its":{
+            "en": "Information Technology Services",
+            "fr": "Services de technologie de l’information"
+            },
+          "legal":{
+            "en": "Legal Services",
+            "fr": "Services juridiques"
+            },
+          "mgnt":{
+            "en": "Management and Oversight Services",
+            "fr": "Services de gestion et de surveillance"
+            },
+          "mat":{
+            "en": "Materiel Services",
+            "fr": "Services de gestion du matériel"
+            },
+          "reg":{
+            "en": "Regulatory Compliance and Enforcement",
+            "fr": "Conformité aux règlements et application des règlements"
+            },
+          "res":{
+            "en": "Resources",
+            "fr": "Ressources"
+            },
+          "prop":{
+            "en": "Real Property Services",
+            "fr": "Services immobiliers"
+            },
+          "rule":{
+            "en": "Rule Making",
+            "fr": "Établissement de règles"
+            }
+          }
+        },
+        {
+          "id": "special_designations",
+          "label": {
+            "fr": "Désignations spéciales",
+            "en": "Special Designations"
+          },
+          "description": {
+            "fr": "Identifie le service comme un service prioritaire, un service critique à la mission et / ou un service essentiel. Ces désignations ne sont pas mutuellement exclusives et plus d'une désignation être indiquée.",
+            "en": "Identifies the service as a priority service, a mission critical service and/or an essential service. These designations are not mutually exclusive and more than one designation can be listed."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "prior": {
+              "fr": "Service prioritaire",
+              "en": "Priority Service"
+            },
+            "crit": {
+              "fr": "Service critique",
+              "en": "Critical Service"
+            },
+            "essent": {
+              "fr": "Service essentiel",
+              "en": "Essential Service"
+            },
+            "non": {
+              "fr": "Aucun des éléments ci-dessus",
+              "en": "None of the above"
+            }
+          }
+        },
+        {
+          "id": "service_description_en",
+          "label": {
+            "fr": "Description du service (en anglais)",
+            "en": "Service Description (English)"
+          },
+          "description": {
+            "fr": "Offre une brève description du service, en langage simple.",
+            "en": "Provides a brief description of the service, in plain language."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_description_fr",
+          "label": {
+            "fr": "Description du service (en français)",
+            "en": "Service Description (French)"
+          },
+          "description": {
+            "fr": "Offre une brève description du service, en langage simple.",
+            "en": "Provides a brief description of the service, in plain language."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_url_en",
+          "label": {
+            "fr": "URL du service (anglais)",
+            "en": "URL to Service (English)"
+          },
+          "description": {
+            "fr": "Indique la page Web du ministère où le service est décrit et/ou peut être lancé.",
+            "en": "Identifies the departmental webpage where the service is described and/or accessed."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_url_fr",
+          "label": {
+            "fr": "URL du service (français)",
+            "en": "URL to Service (French)"
+          },
+          "description": {
+            "fr": "Indique la page Web du ministère où le service est décrit et/ou peut être lancé.",
+            "en": "Identifies the departmental webpage where the service is described and/or accessed."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "program_name_en",
+          "label": {
+            "fr": "Désignation du programme (en anglais)",
+            "en": "Program Name (English)"
+          },
+          "description": {
+            "fr": "Indique le nom du programme sous lequel le service est offert.",
+            "en": "Identifies the name of the program under which the service is delivered."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "program_name_fr",
+          "label": {
+            "fr": "Désignation du programme (en français)",
+            "en": "Program Name (French)"
+          },
+          "description": {
+            "fr": "Indique le nom du programme sous lequel le service est offert.",
+            "en": "Identifies the name of the program under which the service is delivered."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "last_GBA",
+          "label": {
+            "fr": "Année de la dernière ACS+",
+            "en": "Year of last GBA+"
+          },
+          "description": {
+            "fr": "Identifie l’exercice lors duquel la plus récente ACS+ a été menée",
+            "en": "Identifies the fiscal year when the most recent GBA+ review was completed"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "2013-2014": "2013-2014",
+            "2014-2015": "2014-2015",
+            "2015-2016": "2015-2016",
+            "2016-2017": "2016-2017",
+            "2017-2018": "2017-2018",
+            "2018-2019": "2018-2019",
+            "2019-2020": "2019-2020",
+            "2020-2021": "2020-2021",
+            "2021-2022": "2021-2022"
+          }
+        },
+        {
+          "id": "ident_platform",
+        "label": {
+          "en": "Digital Identity Platform",
+          "fr": "Plateformes organisationnelles d’identité numérique"
+        },
+        "description": {
+          "en": "Identifies the use of TBS mandated enterprise digital identity platforms for identity, credential and access management, where applicable.",
+          "fr": "Ce champ indique l’utilisation de plateformes organisationnelles d’identité numérique exigées par le SCT pour la gestion de l’identité, des justificatifs et de l’accès, s’il y a lieu."
+        },
+       "datastore_type": "text",
+        "choices": {
+          "ex_auth": {
+            "en": "Cyber Auth/ECM - External (Public) credential and authentication (GCKey, CBS)",
+            "fr": "Authentification électronique/GJE - Service de gestion des justificatifs externes (CléGC, SCJI)"
+          },
+          "signin_authenti": {
+            "en": "Sign In Canada",
+            "fr": "Authenti-Canada"
+          },
+          "gcpass": {
+            "en": "GCpass/ICAS (Internal Centralized Authentication Service)",
+            "fr": "GCpass/SICA (le Service Interne Centralizé d'Authentification)"
+          },
+          "in_auth": {
+            "en": "ICM - Internal (GC worker) credential and authentication service (myKEY)",
+            "fr": "GJI - Service de gestion des justificatifs internes (maClé)"
+          },
+          "oth": {
+            "en": "Other",
+            "fr": "Autre"
+          }
+        }
+      },
+        {
+          "id": "client_target_groups",
+          "label": {
+            "fr": "Clients/groupes cibles",
+            "en": "Client/Target Groups"
+          },
+          "description": {
+            "fr": "Identifie les clients ou les groupes de services cibles.",
+            "en": "Identifies the clients or target groups of the service."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "econom": {
+              "fr": "Segments économiques (entreprises)",
+              "en": "Economic Segments (Businesses)"
+            },
+            "for": {
+              "fr": "Entités étrangères",
+              "en": "Foreign Entities"
+            },
+            "intern_gov": {
+              "fr": "Interne au gouvernement",
+              "en": "Internal to Government"
+            },
+            "NGO": {
+              "fr": "Institutions et organismes sans but lucratif",
+              "en": "Non Profit Institutions and Organizations"
+            },
+            "person": {
+              "fr": "personnes",
+              "en": "Persons"
+            },
+            "PTC": {
+              "fr": "Provinces, territoires et collectivités",
+              "en": "Provinces, Territories or Communities"
+            },
+            "enviro": {
+              "en": "Environmental",
+              "fr": "Environnemental"
+            }
+          }
+        },
+        {
+          "id": "info_service",
+          "label": {
+            "fr": "Service d’information",
+            "en": "Information Service"
+          },
+          "description": {
+            "fr": "Déterminer si un service existe seulement pour fournir des renseignements aux clients.",
+            "en": "Identifies whether a service exists solely to provide information to clients."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non",
+              "en": "No"
+            },
+            "Y": {
+              "fr": "Oui",
+              "en": "Yes"
+            },
+            "ND": {
+              "fr": "S.O. (Aucune donnée n’est disponible)",
+              "en": "ND (No Data)"
+            },
+            "NA": {
+              "fr": "S.O. (n’est pas applicable)",
+              "en": "N/A (not applicable)"
+            }
+          }
+        },
+        {
+          "id": "service_fee",
+          "label": {
+            "fr": "Frais de service",
+            "en": "Service Fees"
+          },
+          "description": {
+            "fr": "Indique si des frais de service sont perçus pour la prestation du service.",
+            "en": "Identifies whether a service fee is collected for the provision of the service."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non",
+              "en": "No"
+            },
+            "Y": {
+              "fr": "Oui",
+              "en": "Yes"
+            }
+          }
+        },
+        {
+          "id": "cra_business_number",
+          "label": {
+            "fr": "Utilisation du numéro d’entreprise de l’ARC",
+            "en": "Use of CRA Business Number"
+          },
+          "description": {
+            "fr": "Identifie si le numéro d'entreprise de l'Agence du Revenu du Canada est utilisé dans la prestation du service si le service est livré à une entreprise.",
+            "en": "Identifies whether the Canada Revenue Agency's Business Number is used in the delivery of the service if the service is delivered to a business."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non",
+              "en": "No"
+            },
+            "NA": {
+              "fr": "S.O. (N’est pas un service aux entreprises)",
+              "en": "N/A (not a service to businesses)"
+            },
+            "Y": {
+              "fr": "Oui",
+              "en": "Yes"
+            }
+          }
+        },
+        {
+          "id": "use_of_sin",
+          "label": {
+            "fr": "Utilisation du numéro d’assurance sociale (NAS)",
+            "en": "Use of Social Insurance Number"
+          },
+          "description": {
+            "fr": "Indique si le numéro d’assurance sociale (NAS) est utilisé dans la prestation du service.",
+            "en": "Identifies whether the Social Insurance Number (SIN) is used in the delivery of the service."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non",
+              "en": "No"
+            },
+            "Y": {
+              "fr": "Oui",
+              "en": "Yes"
+            },
+            "ND": {
+              "fr": "S.O. (Aucune donnée n’est disponible)",
+              "en": "ND (No Data)"
+            },
+            "NA": {
+              "fr": "S.O. (n’est pas applicable)",
+              "en": "N/A (not applicable)"
+            }
+          }
+        },
+        {
+          "id": "service_channels",
+          "label": {
+            "fr": "Mode de prestation de service",
+            "en": "Service Delivery Channels"
+          },
+          "description": {
+            "fr": "Identifie les modes par lesquels les services sont offerts aux groupes de clients.",
+            "en": "Identifies the channels by which services are delivered to client groups."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "eml": {
+              "fr": "Courriel",
+              "en": "Email"
+            },
+            "fax": {
+              "fr": "Télécopieur",
+              "en": "Fax"
+            },
+            "person": {
+              "fr": "En personne",
+              "en": "In-Person"
+            },
+            "non": {
+              "fr": "Aucune des réponses",
+              "en": "None"
+            },
+            "onl": {
+              "fr": "En ligne",
+              "en": "Online"
+            },
+            "post": {
+              "fr": "Courrier postal",
+              "en": "Postal Mail"
+            },
+            "tel": {
+              "fr": "Téléphone",
+              "en": "Telephone"
+            },
+            "oth":{
+              "en": "Other",
+              "fr": "Autre"
+            }
+          }
+        },
+        {
+          "id": "calls_received",
+          "label": {
+            "fr": "Nombre des demandes téléphoniques reçus",
+            "en": "Number of Telephone Enquiries Received"
+          },
+          "description": {
+            "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
+            "en": "Identifies the number of telephone calls received for the service in a fiscal year."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "web_visits_info_service",
+          "label": {
+            "fr": "Nombre de visites sur le site Web (services d’information)",
+            "en": "Number of Website Visits (Information-Based Services)"
+          },
+          "description": {
+            "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
+            "en": "Identifies the number of website visits in a fiscal year for obtaining information-based services."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "online_applications",
+          "label": {
+            "fr": "Nombre de demandes soumises en ligne",
+            "en": "Number of Applications Submitted Online"
+          },
+          "description": {
+            "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
+            "en": "Identifies the number of applications submitted in a fiscal year for the online channel."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "telephone_applications",
+          "label": {
+            "fr": "Nombre de demandes soumises par téléphone",
+            "en": "Number of Applications Submitted by Telephone"
+          },
+          "description": {
+            "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
+            "en": "Identifies the number of applications submitted in a fiscal year for the telephone channel."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "in_person_applications",
+          "label": {
+            "fr": "Nombre de demandes soumises en personne",
+            "en": "Number of Applications Submitted In-Person"
+          },
+          "description": {
+            "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
+            "evvn": "Identifies the number of applications received in-person in a fiscal year for the service."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "postal_mail_applications",
+          "label": {
+            "fr": "Nombre de demandes soumises par la poste",
+            "en": "Number of Applications Submitted via Postal Mail"
+          },
+          "description": {
+            "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
+            "en": "Identifies the number of applications received through postal mail in a fiscal year for each service."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "other_applications",
+          "label": {
+            "fr": "Nombre de demandes soumises par les autre modes de prestations, par example courriel ou télécopier",
+            "en": "Number of Applications Submitted via other channels, such as email or fax"
+          },
+          "description": {
+            "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
+            "en": "Identifies the number of applications received through other channels in a fiscal year for each service."
+          },
+          "datastore_type": "text"
+        },
+
+        {
+          "id": "e_registration",
+          "label": {
+            "fr": "Services électroniques : Enregistrement/ inscription du compte",
+            "en": "E-enabled Services: Account Registration/Enrollment"
+          },
+          "description": {
+            "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour plus de renseignements sur chaque point d’interaction, veuillez consulter la Ligne directrice sur la gestion de service.\n",
+            "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non (Ce point d’interaction s’applique au service, mais il n’est pas de nature électronique présentement)",
+              "en": "No (This interaction point is applicable to the service but is not currently e-enabled)"
+            },
+            "NA": {
+              "fr": "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "N/A (This interaction point is not applicable to the service)"
+            },
+            "Y": {
+              "fr": "Oui (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "Yes (This interaction point is applicable to the service and is e-enabled)"
+            }
+          }
+        },
+        {
+          "id": "e_authentication",
+          "label": {
+            "fr": "Services électroniques : Authentification",
+            "en": "E-enabled Services: Authentication"
+          },
+          "description": {
+            "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
+            "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non (Ce point d’interaction s’applique au service, mais il n’est pas de nature électronique présentement)",
+              "en": "No (This interaction point is applicable to the service but is not currently e-enabled)"
+            },
+            "NA": {
+              "fr": "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "N/A (This interaction point is not applicable to the service)"
+            },
+            "Y": {
+              "fr": "Oui (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "Yes (This interaction point is applicable to the service and is e-enabled)"
+            }
+          }
+        },
+        {
+          "id": "e_application",
+          "label": {
+            "fr": "Services offerts par voie électronique : Demande",
+            "en": "E-enabled Services: Application"
+          },
+          "description": {
+            "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
+            "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non (Ce point d’interaction s’applique au service, mais il n’est pas de nature électronique présentement)",
+              "en": "No (This interaction point is applicable to the service but is not currently e-enabled)"
+            },
+            "NA": {
+              "fr": "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "N/A (This interaction point is not applicable to the service)"
+            },
+            "Y": {
+              "fr": "Oui (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "Yes (This interaction point is applicable to the service and is e-enabled)"
+            }
+          }
+        },
+        {
+          "id": "e_decision",
+          "label": {
+            "fr": "Services offerts par voie électronique : Décision",
+            "en": "E-enabled Services: Decision"
+          },
+          "description": {
+            "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
+            "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non (Ce point d’interaction s’applique au service, mais il n’est pas de nature électronique présentement)",
+              "en": "No (This interaction point is applicable to the service but is not currently e-enabled)"
+            },
+            "NA": {
+              "fr": "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "N/A (This interaction point is not applicable to the service)"
+            },
+            "Y": {
+              "fr": "Oui (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "Yes (This interaction point is applicable to the service and is e-enabled)"
+            }
+          }
+        },
+        {
+          "id": "e_issuance",
+          "label": {
+            "fr": "Services électroniques : Délivrance",
+            "en": "E-enabled Services: Issuance"
+          },
+          "description": {
+            "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
+            "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non (Ce point d’interaction s’applique au service, mais il n’est pas de nature électronique présentement)",
+              "en": "No (This interaction point is applicable to the service but is not currently e-enabled)"
+            },
+            "NA": {
+              "fr": "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "N/A (This interaction point is not applicable to the service)"
+            },
+            "Y": {
+              "fr": "Oui (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "Yes (This interaction point is applicable to the service and is e-enabled)"
+            }
+          }
+        },
+        {
+          "id": "e_feedback",
+          "label": {
+            "fr": "Services électroniques : Solution de problème et rétroaction",
+            "en": "E-enabled Services: Issue Resolution and Feedback"
+          },
+          "description": {
+            "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
+            "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "N": {
+              "fr": "Non (Ce point d’interaction s’applique au service, mais il n’est pas de nature électronique présentement)",
+              "en": "No (This interaction point is applicable to the service but is not currently e-enabled)"
+            },
+            "NA": {
+              "fr": "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "N/A (This interaction point is not applicable to the service)"
+            },
+            "Y": {
+              "fr": "Oui (Ce point d’interaction s’applique au service et est de nature électronique)",
+              "en": "Yes (This interaction point is applicable to the service and is e-enabled)"
+            }
+          }
+        },
+        {
+          "id": "client_feedback",
+          "label": {
+            "fr": "Les clients ont l’occasion de donner une rétroaction sur le niveau de satisfaction de ce service, par canal",
+            "en": "Client Given Opportunity to Provide Feedback on Level of Satisfaction with this Service by Channel"
+          },
+          "description": {
+            "fr": "Détermine quels canaux, s’il y a lieu, offrent aux utilisateurs d’un service l’occasion de donner une rétroaction sur leur niveau de satisfaction à l’égard du service.",
+            "en": "Identifies which channels, if any, provide users of a service an opportunity to provide feedback on their level of satisfaction with the service."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "eml": {
+              "fr": "Courriel",
+              "en": "Email"
+            },
+            "fax": {
+              "fr": "Télécopieur",
+              "en": "Fax"
+            },
+            "person": {
+              "fr": "En personne",
+              "en": "In-Person"
+            },
+            "non": {
+              "fr": "Aucune des réponses",
+              "en": "None"
+            },
+            "onl": {
+              "fr": "En ligne",
+              "en": "Online"
+            },
+            "post": {
+              "fr": "Courrier postal",
+              "en": "Postal Mail"
+            },
+            "tel": {
+              "fr": "Téléphone",
+              "en": "Telephone"
+            },
+            "oth":{
+              "en": "Other",
+              "fr": "Autre"
+            }
+          }
+        },
+        {
+          "id": "special_remarks_en",
+          "label": {
+            "fr": "Remarques spéciales (anglais)",
+            "en": "Special Remarks (English)"
+          },
+          "description": {
+            "fr": "Fournit de l’espace supplémentaire pour les commentaires relatifs aux renseignements sur les volumes. Veuillez vous reporter au code d’identification de la zone, s’il y a lieu. Pour les commentaires relatifs à d’autres zones, les ministères peuvent publier une note explicative sur leur site Web suivi d’un lien vers l’ensemble de données du Répertoire des services du GC.",
+            "en": "Provides additional space for comments related to volumetrics information. Please refer to associated Field ID, where applicable. For comments related to other fields, departments can create and publish an explanatory note on their website with a link to the GC Service Inventory dataset."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "special_remarks_fr",
+          "label": {
+            "fr": "Remarques spéciales (français)",
+            "en": "Special Remarks (French)"
+          },
+          "description": {
+            "fr": "Fournit de l’espace supplémentaire pour les commentaires relatifs aux renseignements sur les volumes. Veuillez vous reporter au code d’identification de la zone, s’il y a lieu. Pour les commentaires relatifs à d’autres zones, les ministères peuvent publier une note explicative sur leur site Web suivi d’un lien vers l’ensemble de données du Répertoire des services du GC.",
+            "en": "Provides additional space for comments related to volumetrics information. Please refer to associated Field ID, where applicable. For comments related to other fields, departments can create and publish an explanatory note on their website with a link to the GC Service Inventory dataset."
+          },
+          "datastore_type": "text"
+        }
+     ],
+      "example_record": {
+        "fiscal_yr": "2019-2020",
+        "service_id": "1003",
+        "service_name_en": "Employment Insurance (EI) Benefits",
+        "service_name_fr": "Prestations d’assurance-emploi",
+        "department_name_en" : "Employment and Social Development Canada",
+        "department_name_fr" : "Emploi et Développement social Canada",
+        "external_internal": "extern",
+        "service_type": "res",
+        "special_designations": [
+          "essent",
+          "prior"
+        ],
+        "service_description_en": "EI provides temporary financial assistance to unemployed Canadians who have lost their job through no fault of their own, while they look for work or upgrade their skills. Canadians who are sick, pregnant, or caring for a newborn or adopted child, as well as those who must care for a family member who is seriously ill with a significant risk of death or who must provide care or support to their critically ill or injured child  family member may also be assisted by EI. The program also allows for self-employed individuals to register into it for access to EI special benefits (sickness, maternity, parental, compassionate care and parents of critically ill children family caregiver benefits).",
+        "service_description_fr": "L’assurance-emploi procure une aide financière temporaire aux Canadiens au chômage qui ont perdu leur emploi pour des raisons indépendantes de leur volonté, pendant qu’ils cherchent du travail ou améliorent leurs compétences. L’assurance-emploi vient également en aide aux travailleurs malades, aux femmes enceintes, aux parents qui s’occupent d’un nouveau-né ou d’un enfant adopté, aux personnes qui doivent s’occuper d’un membre de leur famille souffrant d’une maladie grave qui risque de causer son décès ainsi qu’aux parents qui doivent fournir des soins ou du soutien à leur enfant gravement malade ou blessé. Le programme permet également aux travailleurs indépendants de s'y inscrire pour avoir droit aux prestations spéciales de l'assurance-emploi (prestations de maternité, parentales, de compassion et celles destinées aux parents d’enfants gravement malades).",
+        "service_url_en": "https://www.canada.ca/en/services/benefits/ei.html",
+        "service_url_fr": "https://www.canada.ca/en/services/benefits/ei.html",
+        "program_name_en": "Employment Insurance",  
+        "program_name_fr": "Assurance-emploi",
+        "last_GBA": "2019-2020",
+        "ident_platform": "ex_auth",
+        "client_target_groups": [
+          "econom",
+          "person"
+        ],
+        "info_service": "N",
+        "service_fee": "N",
+        "cra_business_number": "Y",
+        "use_of_sin": "Y",
+        "service_channels" : [
+          "eml",
+          "onl",
+          "oth",
+          "person",
+          "post",
+          "tel"
+        ],
+        "calls_received": "36653828",
+        "web_visits_info_service": "52252154",
+        "online_applications": "4832440",
+        "telephone_applications": "0",
+        "in_person_applications": "0",
+        "postal_mail_applications": "41270",
+        "other_applications": "0",
+        "e_registration": "Y",
+        "e_authentication": "Y",
+        "e_application": "Y",
+        "e_decision": "Y",
+        "e_issuance": "Y",
+        "e_feedback": "N",
+        "client_feedback": [
+          "eml",
+          "onl",
+          "person",
+          "tel"
+        ],
+        "special_remarks_en": "Application volumes reported represent both initial and renewal EI applications.",
+        "special_remarks_fr": "Le nombre de demandes indiqué représente les demandes initiales et les demandes de renouvellement d’assurance-emploi."
+      }
+    },
+    {
+      "resource_name": "service-std",
+      "title": {
+        "en": "Service Standards & Performance Results",
+        "fr": "Normes relatives aux services et résultats de rendement"
+      },
+      "primary_key": [
+        "fiscal_yr",
+        "service_std_id"
+      ],
+      "fields": [
+        {
+          "id": "fiscal_yr",
+          "label": {
+            "fr": "Année financière",
+            "en": "Fiscal Year"
+          },
+          "description": {
+            "fr": "Indique l’exercice pour lequel les données sur les services sont déclarées.",
+            "en": "Identifies the fiscal year for which service data is reported"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "2013-2014": "2013-2014",
+            "2014-2015": "2014-2015",
+            "2015-2016": "2015-2016",
+            "2016-2017": "2016-2017",
+            "2017-2018": "2017-2018",
+            "2018-2019": "2018-2019",
+            "2019-2020": "2019-2020",
+            "2020-2021": "2020-2021",
+            "2021-2022": "2021-2022"
+          }
+        },
+        {
+          "id": "service_id",
+          "label": {
+            "fr": "Numéro d'identification du service",
+            "en": "Service ID Number"
+          },
+          "description": {
+            "fr": "Le numéro unique attribué à un service dans le répertoire afin de faciliter le référencement à des services précis.",
+            "en": "The unique number assigned to a service in the inventory to make it easier to refer to specific services."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_name_en",
+          "label": {
+            "fr": "Nom du service (en anglais)",
+            "en": "Service Name (English)"
+          },
+          "description": {
+            "fr": "Indique le nom officiel du service.",
+            "en": "Identifies the official name of the service."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_name_fr",
+          "label": {
+            "fr": "Nom du service (en français)",
+            "en": "Service Name (French)"
+          },
+          "description": {
+            "fr": "Indique le nom officiel du service.",
+            "en": "Identifies the official name of the service."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_std_id",
+          "label": {
+            "fr": "Code d’identification de la norme relative aux services",
+            "en": "Service Standard ID"
+          },
+          "description": {
+            "fr": "Indique le numéro unique attribué à chaque norme relative aux services pour ce service. Facilite le référencement, car un service peut avoir de multiples normes.",
+            "en": "Identifies the unique number assigned to each service standard for that service. Makes it easier for reference purposes as one service may have multiple standards."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_std_en",
+          "label": {
+            "fr": "Norme relative aux services (anglais)",
+            "en": "Service Standard (English)"
+          },
+          "description": {
+            "fr": "Indique la norme relative aux services ayant trait à un service en particulier. Voir la Ligne directrice sur la gestion des services afin de connaître le format à utiliser pour définir les normes relatives aux services.",
+            "en": "Identifies the service standard related to a particular service. See Guideline on Service Management for format to be used when defining service standards."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_std_fr",
+          "label": {
+            "fr": "Norme relative aux services (français)",
+            "en": "Service Standard (French)"
+          },
+          "description": {
+            "fr": "Indique la norme relative aux services ayant trait à un service en particulier. Voir la Ligne directrice sur la gestion des services afin de connaître le format à utiliser pour définir les normes relatives aux services.",
+            "en": "Identifies the service standard related to a particular service. See Guideline on Service Management for format to be used when defining service standards."
+          },
+         "datastore_type": "text"
+        },
+        {
+          "id": "service_std_url_en",
+          "label": {
+            "fr": "URL vers les normes relatives aux services et les cibles (anglais)",
+            "en": "URL to Service Standards and Targets (English)"
+          },
+          "description": {
+            "fr": "Indique la page Web ministérielle (Canada.ca) où les normes relatives aux services et les cibles sont publiées.",
+            "en": "Identifies the departmental webpage (Canada.ca) where the service standards and targets are published."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_std_url_fr",
+          "label": {
+            "fr": "URL vers les normes relatives aux services et les cibles (français)",
+            "en": "URL to Service Standards and Targets (French)"
+          },
+          "description": {
+            "fr": "Indique la page Web ministérielle (Canada.ca) où les normes relatives aux services et les cibles sont publiées.",
+            "en": "Identifies the departmental webpage (Canada.ca) where the service standards and targets are published."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_std_type",
+          "label": {
+            "fr": "Type de norme relative aux services",
+            "en": "Service Standard Type"
+          },
+          "description": {
+            "fr": "Indique le type de norme relative aux services défini dans la Ligne directrice sur la gestion des services.",
+            "en": "Identifies the type of service standard as defined in the Guideline on Service Management."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "acess": {
+              "fr": "Accès à l’information",
+              "en": "Access"
+            },
+            "accur": {
+              "fr": "Exactitude",
+              "en": "Accuracy"
+            },
+            "oth": {
+              "fr": "Autre",
+              "en": "Other"
+            },
+            "time": {
+              "fr": "Temps opportun",
+              "en": "Timeliness"
+            }
+          }
+        },
+        {
+          "id": "target_type",
+          "label": {
+            "fr": "Type de cible",
+            "en": "Target Type"
+          },
+          "description": {
+            "fr": "Identifie le type de cible de la norme de service.",
+            "en": "Identifies the type of service standard target."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "percentage": {
+              "fr": "Pourcentage des résultats",
+              "en": "Percentage of outcomes"
+            },
+            "other_type": {
+              "fr": "Autre type de cible",
+              "en": "Other type of target"
+            }
+          }
+        },
+        {
+          "id": "service_std_target",
+          "label": {
+            "fr": "Cible de la norme relative aux services",
+            "en": "Service Standard Target"
+          },
+          "description": {
+            "fr": "Indique la valeur entre zéro et cent de la cible de la norme de service.",
+            "en": "Identifies the value between zero and one hundred of the service standard target."
+          },
+          "datastore_type": "numeric"
+        },
+        {
+          "id": "volume_meeting_target",
+          "label": {
+            "fr": "Volume d’activités qui respectent la cible de la norme relative aux services",
+            "en": "Business Volume That Met Service Standard Target"
+          },
+          "description": {
+            "fr": "Indique le nombre d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées, etc.) au cours de l’exercice qui ont respecté une norme relative aux services particulière à un service.",
+            "en": "Identifies the number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the fiscal year that met a particular service standard target for a service."
+          },
+          "datastore_type": "numeric"
+        },
+        {
+          "id": "total_volume",
+          "label": {
+            "fr": "Volumes totaux",
+            "en": "Total Volume"
+          },
+          "description": {
+            "fr": "Indique le nombre total d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées) relativement à un service au cours de l’exercice.",
+            "en": "Identifies the total number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the fiscal year."
+          },
+          "datastore_type": "numeric"
+        },
+        {
+          "id": "performance",
+          "label": {
+            "fr": "Performance",
+            "en": "Performance"
+          },
+          "description": {
+            "fr": "Identifie les résultats atteints pour cette norme de service. Il s’agit du volume_meeting_target divisé par le total_volume",
+            "en": "Identifies the result achieved for this service standard. This is the volume_meeting_target divided by the total_volume"
+          },
+          "datastore_type": "numeric"
+        },
+        {
+          "id": "gcss_tool_fiscal_yr",
+          "label": {
+            "fr": "Dernier examen de la norme relative aux services à l’aide de l’outil d’évaluation des normes relatives aux services du GC",
+            "en": "Last Service Standard Review Using GC Service Standard Assessment Tool"
+          },
+          "description": {
+            "fr": "Indique l’exercice au cours duquel la norme relative aux services a été examinée pour la dernière fois à l’aide de l’outil d’évaluation des normes relatives aux services du GC accessible sur la page GCpédia de la Politique sur les services du GC. (http://www.gcpedia.gc.ca/wiki/GC_Service_Policy_Agenda#Guidance)",
+            "en": "Identifies the fiscal year in which the service standard was last reviewed using the GC Service Standard Assessment Tool available on the GC Service Policy GCPedia page. ( http://www.gcpedia.gc.ca/wiki/GC_Service_Policy_Agenda#Guidance )"
+          },
+         "datastore_type": "text",
+          "choices": {
+            "2013-2014": "2013-2014",
+            "2014-2015": "2014-2015",
+            "2015-2016": "2015-2016",
+            "2016-2017": "2016-2017",
+            "2017-2018": "2017-2018",
+            "2018-2019": "2018-2019",
+            "2019-2020": "2019-2020",
+            "2020-2021": "2020-2021",
+            "2021-2022": "2021-2022"
+          }
+        },
+        {
+          "id": "channel",
+          "label": {
+            "fr": "Mode de prestation de la norme de service",
+            "en": "Service Standard Channel"
+          },
+          "description": {
+            "fr": "Identifie à quelle mode de prestation de service la norme de service est appliquée",
+            "en": "Identifies the service channel to which the service standard applies"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "eml": {
+              "fr": "Courriel",
+              "en": "Email"
+            },
+            "fax": {
+              "fr": "Télécopieur",
+              "en": "Fax"
+            },
+            "person": {
+              "fr": "En personne",
+              "en": "In-Person"
+            },
+            "non": {
+              "fr": "Aucune des réponses",
+              "en": "None"
+            },
+            "onl": {
+              "fr": "En ligne",
+              "en": "Online"
+            },
+            "post": {
+              "fr": "Courrier postal",
+              "en": "Postal Mail"
+            },
+            "tel": {
+              "fr": "Téléphone",
+              "en": "Telephone"
+            },
+            "oth":{
+              "en": "Other",
+              "fr": "Autre"
+            }
+          }
+        },
+        {
+          "id": "standard_channel_comment_en",
+          "label": {
+            "fr": "Commentaires sur le mode de prestation de la norme de service (anglais)",
+            "en": "Comments on the service standard channel (English)"
+          },
+          "description": {
+            "fr": "Commentaires en lien au mode de prestation de la norme de service",
+            "en": "Commentaires sur le mode de prestation de la norme de service (anglais)"
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "standard_channel_comment_fr",
+          "label": {
+            "fr": "Commentaires sur le mode de prestation de la norme de service (Francais)",
+            "en": "Comments on the service standard channel (French)"
+          },
+          "description": {
+            "fr": "Commentaires en lien au mode de prestation de la norme de service",
+            "en": "Comments related to the service standard channel"
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "standard_comment_en",
+          "label": {
+            "fr": "Commentaires sur la norme de service en general (anglais)",
+            "en": "Comments on the service standard in general (English)"
+          },
+          "description": {
+            "fr": "Commentaires en lien à la norme de service en general",
+            "en": "Comments related to the service standard in general"
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "standard_comment_fr",
+          "label": {
+            "fr": "Commentaires sur la norme de service en general (Francais)",
+            "en": "Comments on the service standard in general (French)"
+          },
+          "description": {
+            "fr": "Commentaires en lien à la norme de service en general",
+            "en": "Comments related to the service standard in general"
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "realtime_result_url_en",
+          "label": {
+            "fr": "URL aux résultats de rendement en temps réel (anglais)",
+            "en": "URL to Real-Time Performance Results (English)"
+          },
+          "description": {
+            "fr": "Identifie la site Web du service sur laquelle les résultats de performance en temps réel d'un service sont publiés",
+            "en": "Identifies the departmental webpage where the real-time performance results for a service are published."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "realtime_result_url_fr",
+          "label": {
+            "fr": "URL aux résultats de rendement en temps réel (français)",
+            "en": "URL to Real-Time Performance Results (French)"
+          },
+          "description": {
+            "fr": "Identifie la site Web du service sur laquelle les résultats de performance en temps réel d'un service sont publiés",
+            "en": "Identifies the departmental webpage where the real-time performance results for a service are published."
+          },
+          "datastore_type": "text"
+        }
+      ],
+      "example_record": {
+        "fiscal_yr": "2019-2020",
+        "service_id": "1003",
+        "service_name_en": "Employment Insurance (EI) Benefits",
+        "service_name_fr": "Prestations d’assurance-emploi",
+        "service_std_id": "931",
+        "service_std_en": "Applicants receive an EI benefit payment or are notified that they are not eligible for benefits within 28 calendar days of applying",
+        "service_std_fr": "Les demandeurs reçoivent leurs premières prestations d’assurance-emploi ou un avis de non-admissibilité aux dites prestations dans un délai de 28 jours civils.",
+        "service_std_url_en": "",
+        "service_std_url_fr": "",
+        "service_std_type": [
+          "time"
+        ],
+        "target_type" : [
+          "percentage"
+        ],
+        "service_std_target": "80",
+        "volume_meeting_target": "2142993",
+        "total_volume": "2680195",
+        "performance": "79.9566076348922",
+        "gcss_tool_fiscal_yr": "2018-2019",
+        "channel": [
+          "oth"
+        ],
+        "standard_channel_comment_en": "Mail, Online",
+        "standard_channel_comment_fr": "Par la poste, Numérique",
+        "standard_comment_en": "A significant portion of applications were received within the last 2 weeks of FY 2019-2020.",
+        "standard_comment_fr": "Une grande partie des demandes a été reçue au cours des deux dernières semaines de l’exercice financier 2019-2020.",
+        "realtime_result_url_en": "ND",
+        "realtime_result_url_fr": "ND",
+        "department_name_en" : "Employment and Social Development Canada",
+        "department_name_fr" : "Emploi et Développement social Canada"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "local": {
+        "registry_endpoint": "https://some-endpoint.com",
+        "registry_api_key": "some-guid-goes-here",
+        "dataset_id": "some-guid",
+        "services_resource_id": "some guid",
+        "standards_resource_id": "some guid"    
+    },
+    "staging": {
+        "registry_endpoint": "https://registry-staging.open.canada.ca",
+        "registry_api_key": "0fa92913-3f73-4906-a1f0-00a823da44f4",
+        "dataset_id": "c770eb69-ecd7-4e83-aca5-3be5ff96a2f5",
+        "services_resource_id": "1da37a45-46b6-4db7-b9cc-67f75205ea13",
+        "standards_resource_id": "3949b23e-763d-4691-a7cc-d78f2f1a11bc"
+    },
+    "production": {
+        "registry_endpoint": "https://registry.open.canada.ca",
+        "registry_api_key": "562339ea-ef61-4233-9a85-2864587b6d12",
+        "dataset_id": "3ac0d080-6149-499a-8b06-7ce5f00ec56c",
+        "services_resource_id": "3acf79c0-a5f5-4d9a-a30d-fb5ceba4b60a",
+        "standards_resource_id": "272143a7-533e-42a1-b72d-622116474a21"
+    }
+}
