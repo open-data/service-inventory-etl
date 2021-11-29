@@ -71,7 +71,7 @@ def process_performance_calculation(total_volume, volume_meeting_target):
 
 def run_services_transformation(extract_file, output_path, output_file):
     print('>> Loading services data from {0}'.format(extract_file))
-    df_services = pd.read_excel(extract_file, sheet_name='Services', encoding='utf-8', na_filter=False)
+    df_services = pd.read_excel(extract_file, sheet_name='Services', na_filter=False)
     select_columns = []
     
     print('>> Building services registry dataset')
@@ -303,7 +303,7 @@ def run_services_transformation(extract_file, output_path, output_file):
 
 def run_standards_transformation(extract_file, output_path, output_file):
     print('>> Loading standards data from {0}'.format(extract_file))
-    df_standards = pd.read_excel(extract_file, sheet_name='Standards', encoding='utf-8', na_filter=False)
+    df_standards = pd.read_excel(extract_file, sheet_name='Standards', na_filter=False)
     select_columns = []
     
     print('>> Building standards registry dataset')
