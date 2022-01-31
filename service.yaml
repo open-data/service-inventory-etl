@@ -109,7 +109,7 @@ resources:
     datastore_type: text
     
   # 3.7
-  - datastore_id: external_internal
+  - datastore_id: service_scope
     label:
       en: External Service or Internal Enterprise Service
       fr: Service externe ou service intégré interne
