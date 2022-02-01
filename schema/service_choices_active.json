@@ -8,10 +8,11 @@
         "2014-2015",
         "2013-2014"
     ],
-    "external_internal": [
+    "service_scope": [
         "intern",
         "extern",
-        "enterprise"
+        "enterprise",
+        "intern cluster"
     ],
     "service_type": [
         "acq",
