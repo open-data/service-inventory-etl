@@ -43,7 +43,7 @@
             }
         },
         {
-            "name": "external_internal",
+            "name": "service_scope",
             "type": "string",
             "constraints": {
                 "required": true
