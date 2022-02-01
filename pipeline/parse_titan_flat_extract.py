@@ -124,10 +124,11 @@ def run_services_transformation(extract_file, output_path, output_file):
     external_internal_lookup = {
         'External Service':'extern',
         'Internal Service':'intern',
-        'Internal Enterprise Service':'enterprise'
+        'Internal Enterprise Service':'enterprise',
+        'Internal Cluster':'intern cluster'
     }
-    df_services['external_internal'] = df_services['Service scope (English)'].apply(lambda x: process_lookup_map(x, external_internal_lookup, ''))
-    select_columns.append('external_internal')
+    df_services['service_scope'] = df_services['Service scope (English)'].apply(lambda x: process_lookup_map(x, external_internal_lookup, ''))
+    select_columns.append('service_scope')
 
     # Create service type column
     service_type_lookup = {
