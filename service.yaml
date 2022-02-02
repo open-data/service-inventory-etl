@@ -627,7 +627,6 @@ resources:
       fr: Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.
     obligation: Mandatory
     excel_required: true
-    excel_error_formula: 'and(not(isnumber(value({cell}))),{cell}<>"NA",{cell}<>"ND")'
     format_type: Numeric, NA or ND
     validation: This field must not be empty
     occurrence: Single
