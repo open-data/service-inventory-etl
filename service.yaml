@@ -107,9 +107,9 @@ resources:
     validation: This field must not be empty
     occurrence: Single
     datastore_type: text
-    
+
   # 3.7
-  - datastore_id: service_scope
+  - datastore_id: external_internal
     label:
       en: External Service or Internal Enterprise Service
       fr: Service externe ou service intégré interne
@@ -133,8 +133,7 @@ resources:
       enterprise:
         en: Internal Enterprise Service
         fr: Service interne intégré
-
-  # 3.8
+  # 3.10
   - datastore_id: service_type
     label:
       en: Service Type
@@ -202,14 +201,14 @@ resources:
         en: Rule Making
         fr: Établissement de règles
 
-  # 3.9
-  - datastore_id: special_designations
+  # 3.11
+  - datastore_id: service_recipient_type
     label:
-      en: Special Designations
-      fr: Désignations spéciales
+      en: Service Recipient Type (English)
+      fr: Service Recipient Type (French)
     description:
-      en: Identifies the service as a priority service, a mission critical service and/or an essential service. These designations are not mutually exclusive and more than one designation can be listed.
-      fr: Identifie le service comme un service prioritaire, un service critique à la mission et / ou un service essentiel. Ces désignations ne sont pas mutuellement exclusives et plus d’une désignation être indiquée.
+      en: Identifies the service as a client or societal-based service.
+      fr: 
     obligation: Mandatory
     excel_required: true
     format_type: Controlled List
@@ -218,20 +217,14 @@ resources:
     datastore_type: text
     excel_full_text_choices: true
     choices:
-      prior:
-        en: Priority Service
-        fr: Service prioritaire
-      crit:  
-        en: Critical Service
-        fr: Service critique
-      essent:
-        en: Essential Service
-        fr: Service essentiel
-      non:
-        en: None of the above
-        fr: Aucun des éléments ci-dessus
+      client:
+        en: Client-based Services
+        fr: Services ciblés axés sur les clients
+      society:  
+        en: Societal-based Service
+        fr: Services non ciblés axés sur la société
 
-  # 3.10
+  # 3.8
   - datastore_id: service_description_en
     label:
       en: Service Description (English)
@@ -246,7 +239,7 @@ resources:
     occurrence: Single
     datastore_type: text
 
-  # 3.11
+  # 3.9
   - datastore_id: service_description_fr
     label:
       en: Service Description (French)
@@ -260,7 +253,7 @@ resources:
     validation: This field must not be empty
     occurrence: Single
     datastore_type: text
-
+      
   # 3.12 (new field)
   - datastore_id: service_url_en
     label:
@@ -321,7 +314,7 @@ resources:
     occurrence: Multiple
     datastore_type: text
 
- # 3.16 
+ # 3.16
   - datastore_id: last_GBA
     label:
       en: Year of last GBA+ 
@@ -336,7 +329,7 @@ resources:
     datastore_type: text
     choices_file: choices/service_fiscal_yr.yaml
 
-  # 3.xx (New Field)
+  # 3.17 (New Field)
   - datastore_id: ident_platform
     label:
       en: Digital Identity Platform
@@ -364,7 +357,7 @@ resources:
         en: Other
         fr: Autre
 
-  # 3.17
+  # 3.18
   - datastore_id: client_target_groups
     label:
       en: Client/Target Groups
@@ -402,7 +395,7 @@ resources:
         en: Environmental
         fr: Environnemental
 
-  # 3.18 (New Field)
+  # 3.19 (New Field)
   - datastore_id: info_service
     label:
       en: Information Service
@@ -431,7 +424,7 @@ resources:
         en: N/A (not applicable)
         fr: S.O. (n’est pas applicable)
 
-  # 3.19 (was user_fee)
+  # 3.20 (was user_fee)
   - datastore_id: service_fee
     label:
       en: Service Fees
@@ -454,7 +447,7 @@ resources:
         en: No
         fr: Non
 
-  # 3.20
+  # 3.21
   - datastore_id: cra_business_number
     label:
       en: Use of CRA Business Number
@@ -480,7 +473,7 @@ resources:
         en: N/A (not a service to businesses)
         fr: S.O. (N’est pas un service aux entreprises)
 
-  # 3.21 (new field)
+  # 3.22 (new field)
   - datastore_id: use_of_sin
     label:
       en: Use of Social Insurance Number
@@ -509,62 +502,70 @@ resources:
         en: (data not available)
         fr: (Aucune donnée n’est disponible)
 
-  # 3.22
-  - datastore_id: service_channels
+# 3.23 (new field)
+  - datastore_id: assessed_for_accessibility
     label:
-      en: Service Delivery Channels
-      fr: Mode de prestation de service
+      en:
+      fr: 
     description:
-      en: Identifies the channels by which services are delivered to client groups.
-      fr: Identifie les modes par lesquels les services sont offerts aux groupes de clients.
-    format_type: Controlled List
-    occurrence: Multiple
-    datastore_type: _text
-    choices:
-      onl:
-        en: Online
-        fr: En ligne
-      tel:
-        en: Telephone
-        fr: Téléphone
-      person:
-        en: In-Person
-        fr: En personne
-      eml:
-        en: Email
-        fr: Courriel
-      fax:
-        en: Fax
-        fr: Télécopieur
-      post:
-        en: Postal Mail
-        fr: Courrier postal
-      oth:
-        en: Other
-        fr: Autre
-      non:
-        en: None
-        fr: Aucune des réponses
-   
-  # 3.24 (was volumes_per_channel_telephone)
-  - datastore_id: calls_received
-    label:
-      en: Number of Telephone Enquiries Received
-      fr: Nombre des demandes téléphoniques reçus
-    description:
-      en: |
-        Identifies the number of telephone enquiries received for the service in a fiscal year.
-      fr: |
-        Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.
+      en: Identifies whether the Social Insurance Number (SIN) is used in the delivery of the service.
+      fr: Indique si le numéro d’assurance sociale (NAS) est utilisé dans la prestation du service.
     obligation: Mandatory
     excel_required: true
-    excel_error_formula: 'and(not(isnumber(value({cell}))),{cell}<>"NA",{cell}<>"ND")'
-    format_type: Numeric, NA or ND
+    format_type: Controlled List
     validation: This field must not be empty
     occurrence: Single
     datastore_type: text
-    
-    # 3.23 (new field)
+    excel_full_text_choices: true
+    choices:
+      Y:
+        en: Yes
+        fr: Oui
+      N:
+        en: No
+        fr: Non
+      NA:
+        en: N/A (not a service to individuals)
+        fr: S.O. (n’est pas un service aux particuliers)
+      ND:
+        en: (data not available)
+        fr: (Aucune donnée n’est disponible)
+
+  datastore_id: year_of_last_service_review
+    label:
+      en: Year of Last Service Review
+      fr: 
+    description:
+      en: Year of last service review
+      fr: Année de la dernière 
+    description:
+      en: Identifies the fiscal year when the most recent service review review was completed
+      fr: Identifie l’exercice lors duquel la plus récente 
+    obligation: Optional
+    excel_required: true
+    validation: 
+    occurrence: Single
+    datastore_type: text
+    choices_file: choices/service_fiscal_yr.yaml
+
+datastore_id: year_of_last_service_review_based_on_client_feedback
+    label:
+      en: Year of Last Service Review based on client feedback
+      fr: 
+    description:
+      en: Year of last service review based on client feedback
+      fr: Année de la dernière 
+    description:
+      en: Identifies the fiscal year when the most recent service review review was completed
+      fr: Identifie l’exercice lors duquel la plus récente 
+    obligation: Optional
+    excel_required: true
+    validation: 
+    occurrence: Single
+    datastore_type: text
+    choices_file: choices/service_fiscal_yr.yaml
+
+  # 3.24 (new field)
   - datastore_id: web_visits_info_service
     label:
       en: Number of Website Visits (Information-Based Services)
@@ -583,7 +584,7 @@ resources:
     datastore_type: text
 
 
- # 3.25 (was volumes_per_channel_online)
+ # 3.26 (was volumes_per_channel_online)
   - datastore_id: online_applications
     label:
       en: Number of Applications Submitted Online
@@ -601,7 +602,7 @@ resources:
     occurrence: Single
     datastore_type: text
     
-  # 3.26 (New Field)
+  # 3.27 (New Field)
   - datastore_id: telephone_applications
     label:
       en: Number of Applications Submitted by Telephone
@@ -617,7 +618,23 @@ resources:
     occurrence: Single
     datastore_type: text
 
-  # 3.27 (was volumes_per_channel_in_person)
+  # 3.28 (New Field)
+  - datastore_id: calls_received
+    label:
+      en: Number of Applications Submitted by Telephone
+      fr: Nombre de demandes soumises par téléphone
+    description:
+      en: Identifies the number of applications submitted in a fiscal year for the telephone channel.
+      fr: Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.
+    obligation: Mandatory
+    excel_required: true
+    excel_error_formula: 'and(not(isnumber(value({cell}))),{cell}<>"NA",{cell}<>"ND")'
+    format_type: Numeric, NA or ND
+    validation: This field must not be empty
+    occurrence: Single
+    datastore_type: text
+
+  # 3.29 (was volumes_per_channel_in_person)
   - datastore_id: in_person_applications
     label:
       en: Number of Applications Submitted In-Person
@@ -627,12 +644,13 @@ resources:
       fr: Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.
     obligation: Mandatory
     excel_required: true
+    excel_error_formula: 'and(not(isnumber(value({cell}))),{cell}<>"NA",{cell}<>"ND")'
     format_type: Numeric, NA or ND
     validation: This field must not be empty
     occurrence: Single
     datastore_type: text
 
-  # 3.28 (was volumes_per_channel_mail)
+  # 3.29 (was volumes_per_channel_mail)
   - datastore_id: postal_mail_applications
     label:
       en: Number of Applications Submitted via Postal Mail
@@ -648,7 +666,7 @@ resources:
     occurrence: Single
     datastore_type: text
 
-  # 3.29 (New Field)
+  # 3.30 (New Field)
   - datastore_id: other_applications
     label:
       en: "Number of Applications Submitted via other channels, such as email or fax"
@@ -664,7 +682,7 @@ resources:
     occurrence: Single
     datastore_type: text
 
-  # 3.30
+  # 3.31
   - datastore_id: e_registration
     label:
       en: "E-enabled Services: Account Registration/Enrollment"
@@ -696,7 +714,7 @@ resources:
         en: "N/A (This interaction point is not applicable to the service)"
         fr: "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)"
 
-  # 3.31
+  # 3.32
   - datastore_id: e_authentication
     label:
       en: "E-enabled Services: Authentication"
@@ -728,7 +746,7 @@ resources:
         en: "N/A (This interaction point is not applicable to the service)"
         fr: "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)"
 
-  # 3.32
+  # 3.33
   - datastore_id: e_application
     label:
       en: "E-enabled Services: Application"
@@ -760,7 +778,7 @@ resources:
         en: "N/A (This interaction point is not applicable to the service)"
         fr: "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)"
 
-  # 3.33
+  # 3.34
   - datastore_id: e_decision
     label:
       en: "E-enabled Services: Decision"
@@ -792,7 +810,7 @@ resources:
         en: "N/A (This interaction point is not applicable to the service)"
         fr: "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)"
 
-  # 3.34
+  # 3.35
   - datastore_id: e_issuance
     label:
       en: "E-enabled Services: Issuance"
@@ -824,7 +842,7 @@ resources:
         en: "N/A (This interaction point is not applicable to the service)"
         fr: "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)"
 
-  # 3.35
+  # 3.36
   - datastore_id: e_feedback
     label:
       en: "E-enabled Services: Issue Resolution and Feedback"
@@ -856,7 +874,7 @@ resources:
         en: "N/A (This interaction point is not applicable to the service)"
         fr: "S.O. (Ce point d’interaction s’applique au service et est de nature électronique)"
 
-  # 3.36
+  # 3.37
   - datastore_id: client_feedback
     label:
       en: "Client Given Opportunity to Provide Feedback on Level of Satisfaction with this Service by Channel"
@@ -893,7 +911,7 @@ resources:
         en: None
         fr: Aucune des réponses
 
-  # 3.37 (new field)
+  # 3.38 (new field)
   - datastore_id: special_remarks_en
     label:
       en: Special Remarks (English)
@@ -906,7 +924,7 @@ resources:
     occurrence: Single
     datastore_type: text
 
-  # 3.38 (new field)
+  # 3.39 (new field)
   - datastore_id: special_remarks_fr
     label:
       en: Special Remarks (French)
